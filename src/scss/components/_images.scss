@@ -1,0 +1,89 @@
+.img-circle {
+  border-radius: 50%;
+}
+/**
+*
+* Recent work figure
+*
+**/
+.project-list {
+
+  figure{
+    margin: 0;
+    position: relative;
+    background-color: #222;
+    margin-bottom: $rem-base;
+    overflow: hidden;
+    @include box-shadow(3px, 3px, 6px, rgba(0,0,0,.4));
+
+    img{
+      @include transition(all, .4s, ease-in-out);
+      /**
+      *
+      * fix the jump image when hover
+      *
+      **/
+      -webkit-transform: translateZ(0);
+    }
+
+    .external-link{
+      display: block;
+      width: 100%;
+      height: rem-calc(40);
+      position: absolute;
+      top: 50%;
+      margin-top: rem-calc(-20);
+      opacity: 0;
+
+      a{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: rem-calc(60);
+        height: rem-calc(60);
+        padding: rem-calc(5);
+        color: $body-dark-font-color;
+        border: 2px solid $body-dark-font-color;
+        @include radius(50%);
+        @include transition(all, .3s, ease  );
+
+        &:hover {
+          color: $button-font-color-alt;
+          background-color: $body-dark-font-color;
+        }
+      }
+
+    }
+
+    &:hover {
+      img {
+        opacity: 0.4;
+      }
+      .external-link {
+        opacity: 1;
+      }
+    }
+
+
+  }
+
+    .project__title{
+      font-weight: 700;
+      font-size: rem-calc(18);
+    }
+
+}
+
+.img-scale:hover{
+  img{
+    transform: scale(1.15);
+  }
+}
+.no-csstransforms{
+  .img-scale:hover{
+    img{
+      width: 110%;
+      height: 110%;
+    }
+  }
+}

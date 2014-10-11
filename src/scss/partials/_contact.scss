@@ -1,0 +1,13 @@
+/**
+*
+* Footer
+*
+**/
+.social {
+  a {
+    margin-right: $column-gutter;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

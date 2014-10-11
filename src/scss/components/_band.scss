@@ -1,0 +1,91 @@
+/**
+ * Full-width photo band.
+ *
+ * 1. Make the band stick to the top and bottom of the viewport on small device.
+ *
+ */
+.band {
+    position: relative;
+    height: 100%; /* [1] */
+    background-color: #446CB3;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+
+    * {
+      position: relative;
+      line-height: 1.4;
+      color: #fff;
+      // text-shadow: 1px 1px 0 #000;
+      z-index: 2;
+    }
+}
+  .link-learn-more {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    // -webkit-animation-delay: 1s;
+    //         animation-delay: 1s;
+    &:hover{
+      color: #fff;
+    }
+  }
+
+.band--autoheight{
+  height: auto;
+}
+
+// .band--testimonial {
+//   height: 50%;
+// }
+
+// .band--welcome { background-image: url(../img/css/bands/small/band-welcome.jpg); }
+// .band--quote { background-image: url(../img/css/bands/small/band-quote-half.jpg); }
+// .band--testimonial { background-image: url(../img/css/bands/small/band-welcome.jpg);}
+
+@media #{$medium-up} {
+  // .band--welcome { background-image: url(../img/css/bands/medium/band-welcome.jpg); }
+  // .band--quote { background-image: url(../img/css/bands/medium/band-quote-half.jpg); }
+  // .band--testimonial { background-image: url(../img/css/bands/medium/band-welcome.jpg);}
+}
+
+@media #{$large-up} {
+  // .band--welcome { background-image: url(../img/css/bands/large/band-welcome.jpg); }
+  // .band--quote { background-image: url(../img/css/bands/large/band-quote-half.jpg); }
+  // .band--testimonial { background-image: url(../img/css/bands/large/band-welcome.jpg);}
+}
+
+
+/**
+ * Fix the background on larger screens.
+ */
+@media #{$medium-up} {
+  .band {
+    background-attachment: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25) inset;
+  }
+  .band--testimonial { background-attachment: scroll;}
+}
+// @media #{$xlarge-up} {
+//   .band--quote {
+//     min-height: 0;
+//     height: rem-calc(600);
+//   }
+// }
+    /**
+     * Translucent overlay.
+     */
+    // .band:after {
+    //     content: "";
+    //     position: absolute;
+    //     top:    0;
+    //     right:  0;
+    //     bottom: 0;
+    //     left:   0;
+    //     z-index: 1;
+    //     background-color: rgba(0, 0, 0, 0.1);
+    // }

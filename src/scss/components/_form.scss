@@ -1,0 +1,45 @@
+.error {
+  input,
+  textarea {
+    margin-bottom: $rem-base;
+    border: 2px solid $alert-color !important;
+  }
+  label{
+    small{
+      color: $alert-color !important;
+    }
+  }
+}
+
+/**
+*
+* Spam filter
+*
+**/
+.first-name {
+  display: none !important;
+  visibility: hidden !important;
+  margin: 0 !important;
+}
+
+.form-testimoni{
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea{
+    border: 2px solid #444;
+    padding: rem-calc(12);
+  }
+}
+
+.feedback {
+  margin-top: rem-calc(15);
+}
+
+.back-to-home{
+  line-height: rem-calc(40);
+  color: #444;
+  &:hover{
+    color: #333;
+  }
+}

@@ -1,0 +1,330 @@
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+/**
+ * Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ * e.g.:
+ *
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/Vnph4
+ *
+ */
+.nav{
+    list-style:none;
+    margin-left:0;
+    @include clearfix();
+
+    > li{
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+        }
+    }
+}
+
+
+/**
+ * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+ *
+   <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+//  .nav--stacked{
+
+//   > li{
+//     display:list-item;
+
+//     > a{
+//       display:block;
+//     }
+//   }
+// }
+
+
+/**
+ * `.nav--banner` extends `.nav` and centres the list, e.g.:
+ *
+   <ul class="nav  nav--banner">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+// .nav--banner{
+//     text-align:center;
+// }
+
+
+/**
+ * Give nav links a big, blocky hit area. Extends `.nav`, e.g.:
+ *
+   <ul class="nav  nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+// .nav--block{
+//     line-height:1;
+//     /**
+//      * Remove whitespace caused by `inline-block`.
+//      */
+//     letter-spacing:-0.31em;
+//     word-spacing:-0.43em;
+//     white-space:nowrap;
+
+//     > li{
+//         letter-spacing:normal;
+//         word-spacing:normal;
+
+//         > a{
+//             padding:$column-gutter/2;
+//         }
+//     }
+// }
+
+
+/**
+ * Force a nav to occupy 100% of the available width of its parent. Extends
+ * `.nav`, e.g.:
+ *
+   <ul class="nav  nav--fit">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Thanks to @pimpl for this idea!
+ */
+// .nav--fit{
+//     display:table;
+//     width:100%;
+
+//     > li{
+//         display:table-cell;
+
+//         > a{
+//             display:block;
+//         }
+//     }
+// }
+
+
+/**
+ * Make a list of keywords. Extends `.nav`, e.g.:
+ *
+   `<ul class="nav  nav--keywords>`
+ *
+ */
+// .nav--keywords{
+
+//     > li{
+
+//         &:after{
+//             content:"\002C" "\00A0";
+//         }
+
+//         &:last-child:after{
+//             display:none;
+//         }
+//     }
+// }
+
+.nav__container {
+  position: fixed;
+  width: rem-calc(220);
+  height: 100%;
+  right: 0;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.nav--offcanvas {
+  @include transition(all, .3s, ease-in);
+
+  -webkit-transform: translate3d(rem-calc(180), 0, 0);
+     -moz-transform: translate3d(rem-calc(180), 0, 0);
+      -ms-transform: translate(rem-calc(180), 0);
+      -ms-transform: translate3d(rem-calc(180), 0, 0);
+       -o-transform: translate3d(rem-calc(180), 0, 0);
+          transform: translate3d(rem-calc(180), 0, 0);
+
+  .nav--stacked{
+    width: rem-calc(180);
+    height: 100%;
+    padding-top: rem-calc(15);
+    margin: 0;
+    background-color: #1a1a1a;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    > li {
+      display: list-item;
+      position: relative;
+      >a {
+        display: block;
+        padding: rem-calc(10) rem-calc(15);
+        color: #999;
+      }
+      &.nav__header {
+        > a{
+          font-size: rem-calc(22);
+          color: #fff;
+        }
+      }
+      &.nav__divider {
+        height: rem-calc(10);
+      }
+      &.active,
+      &:hover {
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    top: rem-calc(22);
+    left: 0;
+    right: auto;
+    z-index: 3;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #1a1a1a;
+
+    &:hover {
+      background-color: lighten(#1a1a1a, 3%);
+    }
+
+    span{
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: white;
+      top: 50%;
+      margin-top: 0px;
+      left: 50%;
+      margin-left: -10px;
+
+      @include transition(background, 0.3s);
+
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        background: inherit;
+        width: 100%;
+        height: 100%;
+
+        top: -6px;
+        @include transform(translateZ(0));
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        -webkit-transition: -webkit-transform 0.3s, background 0s;
+           -moz-transition:    -moz-transform 0.3s, background 0s;
+                transition:         transform 0.3s, background 0s;
+
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        background: inherit;
+        width: 100%;
+        height: 100%;
+
+        bottom: -6px;
+        @include transform(rotate(0));
+        @include transform(translateZ(0));
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        -webkit-transition: -webkit-transform 0.3s, background 0s;
+           -moz-transition:    -moz-transform 0.3s, background 0s;
+                transition:         transform 0.3s, background 0s;
+      }
+    }
+  }
+}
+.no-csstransforms{
+  .nav--offcanvas {
+    right: -180px !important;
+    &.open {
+      right: 0px !important;
+    }
+  }
+}
+
+
+.sidebar-opened{
+  .nav__container{
+    -webkit-transform: translate3d(rem-calc(0), 0, 0);
+       -moz-transform: translate3d(rem-calc(0), 0, 0);
+        -ms-transform: translate(rem-calc(0), 0);
+        -ms-transform: translate3d(rem-calc(0), 0, 0);
+         -o-transform: translate3d(rem-calc(0), 0, 0);
+            transform: translate3d(rem-calc(0), 0, 0);
+  }
+  .nav__toggle{
+    span{
+      background-color: transparent;
+      &:before{
+        top:0;
+        background-color: white;
+        @include transform(rotate(135deg))
+      }
+      &:after{
+        bottom:0;
+        background-color: white;
+        @include transform(rotate(225deg))
+      }
+    }
+  }
+  .close-sidebar{
+    -webkit-backface-visibility: hidden;
+    @include transition(background, 300ms, ease);
+    cursor: pointer;
+    box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+    display: block;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.15);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
