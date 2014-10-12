@@ -63,7 +63,11 @@ else
   $mail->AddBCC('ahmadmilzam@yahoo.com');
   $mail->IsHTML(true);
   $mail->Body = '<h4>You got testimonial!</h4>';
-  $mail->Body .= 'Dari: '.$name.'<br>Isi Testimonial: <br>'.$message;
+  $mail->Body .= 'Dari: '.$name.'<br>';
+  $mail->Body .= 'Isi Testimonial: <br>'.$message.'<br>';
+  if($website !== ''){
+    $mail->Body .= 'Website: '.$website.'<br>';
+  }
 
     // GMAIL STUFF
 
