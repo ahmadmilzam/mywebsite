@@ -40,7 +40,7 @@
 
   <div class="row wow fadeInUp">
     <div class="small-6 medium-4 large-4 columns margin-bottom-onsmall">
-      <p class="lead no-margin-bottom small-text-center">
+      <p class="lead no-margin-bottom small-text-center medium-text-left large-text-left">
         If you are interested in working together I'm available for
         <strong>freelance</strong> or
         <strong>direct client projects</strong>. <br>
