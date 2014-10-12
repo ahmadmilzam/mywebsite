@@ -14,7 +14,7 @@
 
     <meta property="og:title" content="Online Portfolio of Ahmad Milzam">
     <meta property="og:url" content="http://ahmadmilzam.com">
-    <meta property="og:image" content="http://ahmadmilzam.com/assets/img/layout/small/milzam.png">
+    <meta property="og:image" content="http://ahmadmilzam.com/assets/img/fb-og.png">
     <meta property="og:description" content="Online Portfolio of Ahmad Milzam, a Freelance Front-end and Web Developer living in Jakarta, Indonesia">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Ahmad Milzam | Freelance Web Developer Jakarta Indonesia">
