@@ -1,6 +1,3 @@
-mywebsite
-=========
-
 # My online portfolio
 
 This is a my online portfolio, live preview at http://ahmadmilzam.com
