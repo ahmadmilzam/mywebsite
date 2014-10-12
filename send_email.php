@@ -71,7 +71,7 @@ else
   // Add a recipient
   $mail->AddAddress('email@ahmadmilzam.com', 'Ahmad Milzam');
   $mail->Subject = "Website Contact Form";
-  $mail->AddBCC('ahmadmilzam91@gmail.com');
+  $mail->AddBCC('ahmadmilzam@yahoo.com');
   $mail->IsHTML(true);
   $mail->Body = '<h4>Hey, you got mail!</h4>';
   $mail->Body .= 'From: '.$name.'<br>';
