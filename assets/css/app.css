@@ -2594,10 +2594,6 @@ th.hide-for-touch {
   visibility: hidden !important;
   margin: 0 !important; }
 
-.form-testimoni input[type="text"], .form-testimoni input[type="password"], .form-testimoni input[type="email"], .form-testimoni textarea {
-  border: 2px solid #444444;
-  padding: 0.75rem; }
-
 .feedback {
   margin-top: 0.9375rem; }
 

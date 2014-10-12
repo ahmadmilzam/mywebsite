@@ -17,6 +17,7 @@ if(isset($_POST['first_name']) && $_POST['first_name'] != '')
 
 $name = trim($_POST['name']);
 $email = trim($_POST['email']);
+$website = trim($_POST['website']);
 $message = trim($_POST['message']);
 
 
@@ -28,6 +29,15 @@ if(empty($name) OR empty($email) OR empty($message))
 if(strlen($name) < 4 OR strlen($message) < 10 OR strlen($email) < 9)
 {
   $error = "Are you joking ?";
+}
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $error = "Plase insert a valid email address";
+}
+
+if(!empty($website) && !filter_var($website, FILTER_VALIDATE_URL))
+{
+  $error = "Plase insert a valid url";
 }
 
 if ($error !== '')
