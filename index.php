@@ -39,8 +39,8 @@
 <div class="row--padding--big grey" id="profile">
 
   <div class="row wow fadeInUp">
-    <div class="small-6 medium-4 large-4 columns">
-      <p class="lead no-margin-bottom">
+    <div class="small-6 medium-4 large-4 columns margin-bottom-onsmall">
+      <p class="lead no-margin-bottom small-text-center">
         If you are interested in working together I'm available for
         <strong>freelance</strong> or
         <strong>direct client projects</strong>. <br>
@@ -48,7 +48,7 @@
       </p>
     </div>
     <div class="small-6 medium-2 large-2 columns text-center">
-      <a href="javascript:;" data-scroll="#contact" class="button radius js-button-scroll">SAY HELLO</a>
+      <a href="javascript:;" data-scroll="#contact" class="button large radius js-button-scroll no-margin-bottom">SAY HELLO</a>
     </div>
   </div>
 </div>
