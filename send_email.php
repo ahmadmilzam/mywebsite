@@ -14,6 +14,7 @@ if(isset($_POST['first_name']) && $_POST['first_name'] != '')
 {
   exit;
 }
+// var_dump($_POST); exit;
 
 $name = trim($_POST['name']);
 $email = trim($_POST['email']);
@@ -31,7 +32,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   $error = "Plase insert a valid email address";
 }
 
-if(!filter_var($website, FILTER_VALIDATE_URL))
+if(!empty($website) && !filter_var($website, FILTER_VALIDATE_URL))
 {
   $error = "Plase insert a valid url";
 }
@@ -41,14 +42,14 @@ if(!is_numeric($phone))
   $error = "Please insert a numeric value into phone number field";
 }
 
-if(strlen($phone) < 10)
+if(strlen($phone) < 9)
 {
   $error = "Please insert a valid phone number";
 }
 
-if(strlen($name) < 4 OR strlen($phone) < 10 OR strlen($message) < 10 OR strlen($email) < 9)
+if(strlen($name) < 4 OR strlen($message) < 10 OR strlen($email) < 9)
 {
-  $error = "Are you joking ?";
+  $error = "Are you joking ? Please write good message.";
 }
 
 if ($error !== '')

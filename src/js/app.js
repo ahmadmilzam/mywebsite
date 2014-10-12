@@ -11,8 +11,8 @@ var myapp = (function($, window, document) {
       // exit_sidebar = $('#js-close-sidebar'),
       buttonSubmit = $('#button-form-submit'),
       form = $('#ajax-form'),
-      SteadyText = 'SEND',
-      loadingText = 'Please wait.. <i class="fa fa-spinner fa-spin"></i>';
+      steadyText = 'SEND',
+      loadingText = 'Please wait..';
 
   // var handle_loader = function(){
   //   setTimeout(function(){

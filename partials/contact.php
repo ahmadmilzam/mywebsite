@@ -38,8 +38,11 @@
       <div class="row">
         <div class="small-6 columns">
           <button class="button radius expand" id="button-form-submit" type="submit">SEND</button>
+
         </div>
-        <div id="feedback"></div>
+        <div class="small-6 columns">
+          <div id="feedback"></div>
+        </div>
       </div>
     </form>
 
