@@ -9,6 +9,7 @@
       </div>
     </footer>
 
+    <script src="assets/js/modernizr.custom.min.js"></script>
     <script src="assets/js/app<?php echo ENVIRONMENT == 'development' ? '.js' : '.min.js' ?>"></script>
     <script>
       //DOM READY !!

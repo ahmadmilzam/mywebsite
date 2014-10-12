@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <script src="assets/js/modernizr.custom.min.js"></script>
     <link rel="author" href="https://plus.google.com/116499314183216878484">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
