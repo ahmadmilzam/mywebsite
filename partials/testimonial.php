@@ -43,7 +43,7 @@
             </div>
             <ul class="testimonial__meta">
               <li>
-                <a href="http://qualixen.com">Erpriliano</a>
+                <a href="#">Erpriliano</a>
               </li>
               <li>
                 Vessel Planner, PT. Terminal Teluk Lamong
