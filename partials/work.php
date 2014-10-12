@@ -1,4 +1,4 @@
-<div class="row--padding grey" id="work">
+<div class="row--padding-top grey" id="work">
 
   <h2 class="section-heading text-center">Recent Works</h2>
 

@@ -2624,6 +2624,9 @@ th.hide-for-touch {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
 
+.row--padding-top {
+  padding-top: 2.5rem; }
+
 .row--padding--big {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem; }
