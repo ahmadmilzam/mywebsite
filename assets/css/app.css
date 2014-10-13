@@ -2710,10 +2710,7 @@ th.hide-for-touch {
   margin-bottom: 1.875rem; }
   @media only screen and (min-width:40.063em) {
     .testimonial__text {
-      font-size: 1.25rem; } }
-  @media only screen and (min-width:64.063em) {
-    .testimonial__text {
-      font-size: 1.375rem; } }
+      font-size: 1.125rem; } }
 
 .testimonial__meta {
   list-style-type: none;

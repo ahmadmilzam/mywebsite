@@ -9,11 +9,11 @@
     margin-bottom: rem-calc(30);
 
     @media #{$medium-up}{
-      font-size: rem-calc(20);
+      font-size: rem-calc(18);
     }
-    @media #{$large-up}{
-      font-size: rem-calc(22);
-    }
+    // @media #{$large-up}{
+    //   font-size: rem-calc(16);
+    // }
   }
   .testimonial__meta {
     list-style-type: none;
