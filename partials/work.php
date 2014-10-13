@@ -5,7 +5,7 @@
   <div class="portfolio portfolio--alert">
     <div class="portfolio__img text-center">
       <img data-interchange="
-        [assets/img/project/small/muse.jpg, (small)],
+        [assets/img/project/medium/muse.jpg, (small)],
         [assets/img/project/medium/muse.jpg, (medium)],
         [assets/img/project/large/muse.jpg, (large)]"
         alt="Muse Landing Page" class="wow fadeInLeftBig" data-wow-delay=".1s" data-wow-offset="100">
@@ -38,7 +38,7 @@
   <div class="portfolio portfolio--primary">
     <div class="portfolio__img text-center">
       <img data-interchange="
-        [assets/img/project/small/qualixen.jpg, (small)],
+        [assets/img/project/medium/qualixen.jpg, (small)],
         [assets/img/project/medium/qualixen.jpg, (medium)],
         [assets/img/project/large/qualixen.jpg, (large)]"
         alt="Muse Landing Page" class="wow fadeInRightBig" data-wow-delay=".1s" data-wow-offset="100">
@@ -71,7 +71,7 @@
   <div class="portfolio portfolio--secondary">
     <div class="portfolio__img text-center">
       <img data-interchange="
-        [assets/img/project/small/anona.jpg, (small)],
+        [assets/img/project/medium/anona.jpg, (small)],
         [assets/img/project/medium/anona.jpg, (medium)],
         [assets/img/project/large/anona.jpg, (large)]"
         alt="Muse Landing Page" class="wow fadeInLeftBig" data-wow-delay=".1s" data-wow-offset="100">
@@ -103,7 +103,7 @@
   <div class="portfolio portfolio--success">
     <div class="portfolio__img text-center">
       <img data-interchange="
-        [assets/img/project/small/cominter.jpg, (small)],
+        [assets/img/project/medium/cominter.jpg, (small)],
         [assets/img/project/medium/cominter.jpg, (medium)],
         [assets/img/project/large/cominter.jpg, (large)]"
         alt="Muse Landing Page" class="wow fadeInRightBig" data-wow-delay=".1s" data-wow-offset="100">
