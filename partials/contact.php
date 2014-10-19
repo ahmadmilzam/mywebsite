@@ -15,30 +15,46 @@
     <form class="small-6 medium-4 large-4 columns" action="send_email.php" id="ajax-form" method="post" data-abide="ajax" autocomplete="off">
       <div class="row">
         <div class="small-6 medium-3 large-3 column">
-          <input class="radius" type="text" name="name" placeholder="Name*" required>
-          <input class="radius first-name" type="email" name="first_name" placeholder="Your first name">
+          <label for="name">
+            <small>Name</small>
+            <input class="radius" id="name" type="text" name="name" placeholder="My name is*" required>
+          </label>
+          <label for="firstname">
+            <input class="radius first-name" id="firstname" type="email" name="first_name" placeholder="Your first name">
+          </label>
         </div>
         <div class="small-6 medium-3 large-3 column">
-          <input class="radius" type="email" name="email" placeholder="Email address*" required>
+          <label for="email">
+            <small>Email</small>
+            <input class="radius" id="email" type="email" name="email" placeholder="your.email@something.com*" required>
+          </label>
         </div>
       </div>
       <div class="row">
         <div class="small-6 medium-3 large-3 column">
-          <input class="radius" type="tel" name="phone" placeholder="Phone number*" required pattern="number">
+          <label for="phonenumber">
+            <small>Phone number</small>
+            <input class="radius" id="phonenumber" type="tel" name="phone" placeholder="0899999999*" required pattern="number">
+          </label>
         </div>
         <div class="small-6 medium-3 large-3 column">
-          <input class="radius" type="url" name="website" placeholder=" Current website url">
+          <label for="website-url">
+            <small>Website Url</small>
+            <input class="radius" id="website-url" type="url" name="website" placeholder="http://your-current-website.com">
+          </label>
         </div>
       </div>
       <div class="row">
         <div class="small-6 column">
-          <textarea class="radius" name="message" rows="6" placeholder="Project detail*" required></textarea>
+          <label for="message">
+            <small>Message</small>
+            <textarea class="radius" id="message" name="message" rows="6" placeholder="Hello, I have some project TBD*" required></textarea>
+          </label>
         </div>
       </div>
       <div class="row">
         <div class="small-6 columns">
           <button class="button radius expand" id="button-form-submit" type="submit">SEND</button>
-
         </div>
         <div class="small-6 columns">
           <div id="feedback"></div>
@@ -51,9 +67,9 @@
       <p>
         P: +62 812 840 262 91
         <br>
-        E: email@ahmadmilzam.com
+        E: email[at]ahmadmilzam[dot]com
         <br>
-        E: ahmadmilzam@yahoo.com
+        E: ahmadmilzam[at]yahoo[dot]com
       </p>
       <p class="social">
         <a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon-facebook icon-2x"></i></a>

@@ -27,7 +27,7 @@
             <span class="label">SCSS</span>
             <span class="label">jQuery</span>
           </p>
-          <a href="http://demo.ahmadmilzam.com/muse" class="button radius alert expand">
+          <a href="http://demo.ahmadmilzam.com/muse" title="View Website" class="button radius alert expand">
             View Website <i class="icon icon-paperplane"></i>
           </a>
         </div>
@@ -60,7 +60,7 @@
             <span class="label">jQuery</span>
             <span class="label">Google Map API V3</span>
           </p>
-          <a href="http://qualixen.com" class="button radius expand">
+          <a href="http://qualixen.com" title="View Website" class="button radius expand">
             View Website <i class="icon icon-paperplane"></i>
           </a>
         </div>
@@ -92,7 +92,7 @@
             <span class="label">SCSS</span>
             <span class="label">jQuery</span>
           </p>
-          <a href="http://demo.ahmadmilzam.com/anona" class="button radius secondary expand">
+          <a href="http://demo.ahmadmilzam.com/anona" title="View Website" class="button radius secondary expand">
             View Website <i class="icon icon-paperplane"></i>
           </a>
         </div>
@@ -124,7 +124,7 @@
             <span class="label">SCSS</span>
             <span class="label">jQuery</span>
           </p>
-          <a href="http://demo.ahmadmilzam.com/cominter" class="button radius success expand">
+          <a href="http://demo.ahmadmilzam.com/cominter" title="View Website" class="button radius success expand">
             View Website <i class="icon icon-paperplane"></i>
           </a>
         </div>
