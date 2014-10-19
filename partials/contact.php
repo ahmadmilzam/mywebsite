@@ -47,7 +47,7 @@
       <div class="row">
         <div class="small-6 column">
           <label for="message">
-            <small>Message</small>
+            <small>Project detail</small>
             <textarea class="radius" id="message" name="message" rows="6" placeholder="Hello, I have some project TBD*" required></textarea>
           </label>
         </div>
