@@ -244,3 +244,9 @@
     -moz-box-shadow:    0 0 0 1px $colorTwo, 0 0 0 2px $colorThree;
     box-shadow:         0 0 0 1px $colorTwo, 0 0 0 2px $colorThree;
 }
+
+@mixin text-overflow(){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

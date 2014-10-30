@@ -17,19 +17,19 @@
  *
  */
 .nav{
-    list-style:none;
-    margin-left:0;
-    @include clearfix();
+  list-style:none;
+  margin-left:0;
+  @include clearfix();
 
-    > li{
+  > li{
 
-        &,
-        > a{
-            display:inline-block;
-           *display:inline;
-            zoom:1;
-        }
-    }
+      &,
+      > a{
+          display:inline-block;
+         *display:inline;
+          zoom:1;
+      }
+  }
 }
 
 

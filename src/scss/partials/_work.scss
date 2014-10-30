@@ -6,7 +6,9 @@
     margin-bottom: 0;
   }
 }
-
+  .portfolio__img{
+    position: relative;
+  }
   .portfolio__desc{
     color: $white;
     background-color: $vapor;

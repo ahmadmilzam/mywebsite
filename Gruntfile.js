@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
+        includePaths: ['libs/foundation/scss']
       },
       dist: {
         options: {
@@ -33,11 +33,10 @@ module.exports = function(grunt) {
           // required library script
           'src/js/libs/jquery.min.js',
           'src/js/libs/velocity.js',
-          'bower_components/foundation/js/foundation/foundation.js',
-          'bower_components/foundation/js/foundation/foundation.abide.js',
-          'bower_components/foundation/js/foundation/foundation.interchange.js',
-          'bower_components/fastclick/lib/fastclick.js',
-          // 'bower_components/foundation/js/foundation/foundation.slider.js',
+          'libs/foundation/js/foundation/foundation.js',
+          'libs/foundation/js/foundation/foundation.abide.js',
+          'libs/foundation/js/foundation/foundation.interchange.js',
+          'libs/fastclick/lib/fastclick.js',
 
           'src/js/libs/wow.js',
           'src/js/libs/carousel.js',
