@@ -19,7 +19,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Ahmad Milzam | Freelance Web Developer Jakarta Indonesia">
 
-    <title>Ahmad Milzam | Freelance Web Developer Jakarta Indonesia</title>
+    <title>Ahmad Milzam - Freelance Web Developer | Jakarta Indonesia</title>
     <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'> -->
   </head>
   <body>

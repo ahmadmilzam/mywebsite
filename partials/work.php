@@ -41,7 +41,7 @@
         [assets/img/project/medium/qualixen.jpg, (small)],
         [assets/img/project/medium/qualixen.jpg, (medium)],
         [assets/img/project/large/qualixen.jpg, (large)]"
-        alt="Muse Landing Page" class="wow fadeInRightBig" data-wow-delay=".1s" data-wow-offset="100">
+        alt="Qualixen company profile" class="wow fadeInRightBig" data-wow-delay=".1s" data-wow-offset="100">
     </div>
     <div class="portfolio__desc">
       <div class="row row--padding">
@@ -74,7 +74,7 @@
         [assets/img/project/medium/anona.jpg, (small)],
         [assets/img/project/medium/anona.jpg, (medium)],
         [assets/img/project/large/anona.jpg, (large)]"
-        alt="Muse Landing Page" class="wow fadeInLeftBig" data-wow-delay=".1s" data-wow-offset="100">
+        alt="Anona online shop template" class="wow fadeInLeftBig" data-wow-delay=".1s" data-wow-offset="100">
     </div>
     <div class="portfolio__desc">
       <div class="row row--padding">
@@ -106,7 +106,7 @@
         [assets/img/project/medium/cominter.jpg, (small)],
         [assets/img/project/medium/cominter.jpg, (medium)],
         [assets/img/project/large/cominter.jpg, (large)]"
-        alt="Muse Landing Page" class="wow fadeInRightBig" data-wow-delay=".1s" data-wow-offset="100">
+        alt="Cominter online shop template" class="wow fadeInRightBig" data-wow-delay=".1s" data-wow-offset="100">
     </div>
     <div class="portfolio__desc">
       <div class="row row--padding">

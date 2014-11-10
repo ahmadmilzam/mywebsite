@@ -41,10 +41,11 @@
   <div class="row wow fadeInUp">
     <div class="small-6 medium-4 large-4 columns margin-bottom-onsmall">
       <p class="lead no-margin-bottom small-text-center medium-text-left large-text-left">
-        If you are interested in working together I'm available for
+        I'm available for
         <strong>freelance</strong> or
-        <strong>direct client projects</strong>. <br>
-        Contact details can be found below.
+        <strong>direct client projects</strong>.<br>
+        If you are interested in working together,
+        contact details can be found below.
       </p>
     </div>
     <div class="small-6 medium-2 large-2 columns text-center">
