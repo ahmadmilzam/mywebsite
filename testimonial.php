@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <link rel="author" href="https://plus.google.com/116499314183216878484">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="stylesheet" href="assets/css/app.min.css" />
     <!-- Hello there! . If your looking at this. Maybe you are the people i'd love to work with. -->

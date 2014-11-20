@@ -10,16 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="Ahmad Milzam">
-    <meta name="description" content="Online Portfolio of Ahmad Milzam, a Freelance Front-end and Web Developer living in Jakarta, Indonesia">
+    <meta name="description" content="Online Portfolio of Ahmad Milzam, a Front-end Web Architect and Developer living in Jakarta, Indonesia">
 
     <meta property="og:title" content="Online Portfolio of Ahmad Milzam">
     <meta property="og:url" content="http://ahmadmilzam.com">
     <meta property="og:image" content="http://ahmadmilzam.com/assets/img/cover.jpg">
-    <meta property="og:description" content="Online Portfolio of Ahmad Milzam, a Freelance Front-end and Web Developer living in Jakarta, Indonesia">
+    <meta property="og:description" content="Online Portfolio of Ahmad Milzam, a Front-end Web Architect and Developer living in Jakarta, Indonesia">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Ahmad Milzam | Freelance Web Developer Jakarta Indonesia">
+    <meta property="og:site_name" content="Ahmad Milzam - Front-end Web Architect and Developer | Jakarta Indonesia">
 
-    <title>Ahmad Milzam - Freelance Web Developer | Jakarta Indonesia</title>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'> -->
+    <title>Ahmad Milzam - Front-end Web Architect and Developer | Jakarta Indonesia</title>
   </head>
   <body>

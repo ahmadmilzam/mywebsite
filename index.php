@@ -25,7 +25,7 @@
       <p class="lead">Hello, my name is</p>
       <h1>Ahmad Milzam</h1>
       <h2>
-        <small>Front-end Web Architect / Developer</small>
+        <small>Front-end Web Architect &amp; Developer</small>
       </h2>
     </div>
   </div>
