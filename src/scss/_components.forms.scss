@@ -1,0 +1,32 @@
+// .error {
+//   input,
+//   textarea {
+//     margin-bottom: $base-spacing-unit;
+//     border: 2px solid $color-alert !important;
+//   }
+//   label{
+//     small{
+//       color: $color-alert !important;
+//     }
+//   }
+// }
+
+/**
+*
+* Spam filter
+*
+**/
+.first-name {
+  display: none !important;
+  visibility: hidden !important;
+  margin: 0 !important;
+}
+
+.feedback {
+  margin-top: half($base-spacing-unit);
+  color: $color-success;
+  font-weight: bold;
+  &.error{
+    color: $color-alert;
+  }
+}

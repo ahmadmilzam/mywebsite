@@ -1,31 +1,18 @@
-  <footer class="band band--autoheight layout-footer">
-    <div class="row">
-      <div class="small-6 large-3 small-text-center medium-text-center large-text-left columns">
+  <footer class="layout-footer">
+    <div class="layout">
+      <div class="layout__item medium-3-6 small-text-center medium-text-center large-text-left columns">
         Copyright &copy; ahmadmilzam.com 2014
       </div>
-      <div class="small-6 large-3 columns small-text-center medium-text-center large-text-right">
+      <div class="layout__item medium-3-6 columns small-text-center medium-text-center large-text-right">
         Made with <i class="icon icon-heart"></i> from my <i class="icon icon-house"></i> in Jakarta, Indonesia
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/modernizr.custom.min.js"></script>
+  <!-- <script src="assets/js/modernizr.custom.min.js"></script> -->
   <script src="assets/js/app<?php echo ENVIRONMENT == 'development' ? '.js' : '.min.js' ?>"></script>
-  <script>
-    //DOM READY !!
-    //init app script
-    myapp.init({
-      gallery: {
-        id: 'js-testimonial',
-        config: {
-          lazyLoad : true,
-          navigation : false,
-          singleItem:true,
-          autoHeight: true
-        }
-      }
-    });
-  </script>
+
+  <!-- google analytics -->
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

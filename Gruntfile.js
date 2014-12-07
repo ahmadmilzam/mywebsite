@@ -3,12 +3,15 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
-      options: {
-        includePaths: ['libs/foundation/scss']
+      options:{
+        loadPath: [
+          'libs/csskit/scss'
+        ],
+        lineNumbers: false
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          style: 'compressed'
         },
         files: {
           'assets/css/app.min.css': 'src/scss/app.scss'
@@ -16,7 +19,7 @@ module.exports = function(grunt) {
       },
       dev:{
         options: {
-          outputStyle: 'nested'
+          style: 'expanded'
         },
         files: {
           'assets/css/app.css': 'src/scss/app.scss'
@@ -31,16 +34,11 @@ module.exports = function(grunt) {
       vendor: {
         src: [
           // required library script
-          'src/js/libs/jquery.min.js',
-          'src/js/libs/velocity.js',
-          'libs/foundation/js/foundation/foundation.js',
-          'libs/foundation/js/foundation/foundation.abide.js',
-          'libs/foundation/js/foundation/foundation.interchange.js',
-          'libs/fastclick/lib/fastclick.js',
-
-          'src/js/libs/wow.js',
-          'src/js/libs/carousel.js',
-          'src/js/libs/clearform.js',
+          // 'src/js/raf.js',
+          'src/js/wow.js',
+          'src/js/smoothscroll.js',
+          'src/js/responsive-img.js',
+          // 'src/js/validate.js',
 
           // my script
           'src/js/app.js'
@@ -55,7 +53,7 @@ module.exports = function(grunt) {
         tasks: ['development-task']
       },
       sass: {
-        files: 'src/scss/**/*.scss',
+        files: ['src/scss/**/*.scss', 'libs/csskit/scss/**/*.scss'],
         tasks: ['development-task']
       },
       js: {
@@ -78,7 +76,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');

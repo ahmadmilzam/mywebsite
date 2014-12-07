@@ -1,23 +1,26 @@
-<div class="row--padding">
-  <h2 class="section-heading text-center">Profile</h2>
-  <div class="row">
+<div class="pv+">
+  <h2 class="text-center mb">Profile</h2>
+  <div class="layout">
 
-    <div class="small-6 medium-3 large-3 columns text-center pos-rel wow fadeInLeft" data-wow-delay=".10s" data-wow-offset="150">
-      <img data-interchange="
-        [assets/img/layout/small/milzam.png, (small)],
-        [assets/img/layout/medium/milzam.png, (medium)],
-        [assets/img/layout/large/milzam.png, (large)]"
+    <div class="layout__item medium-3-6 text-center pos-rel wow fadeInLeft" data-wow-delay=".10s" data-wow-offset="150">
+      <img data-src-base="assets/img/layout/"
+           data-src="<480:small/milzam.png,
+                     <768:medium/milzam.png,
+                     <960:medium/milzam.png,
+                     >960:large/milzam.png"
       alt="Ahmad Milzam">
       <br>
-      <blockquote class="hide-for-large-up">
-        <p>
-          "Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!"
+      <blockquote class="hide-for-medium-up">
+        <p class="blockquote__body">
+          Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!
         </p>
-        <cite>TURN.ON.IDEAS, <a href="http://thegrowthlab.co.nz">Growthlab Project</a></cite>
+        <footer class="blockquote__footer">
+          <cite>TURN.ON.IDEAS, <a href="http://thegrowthlab.co.nz">Growthlab Project</a></cite>
+        </footer>
       </blockquote>
     </div>
 
-    <div class="small-6 medium-3 large-3 columns pos-rel wow fadeInRight" data-wow-delay=".15s" data-wow-offset="150">
+    <div class="layout__item medium-3-6 pos-rel wow fadeInRight" data-wow-delay=".15s" data-wow-offset="150">
       <p class="text-justify">
         My name is Ahmad Milzam, living in Jakarta, Indonesia.
         I specialise in writing, <strong>architecting</strong> and
@@ -32,7 +35,7 @@
         as you can see by <strong>this very website</strong>.
       </p>
 
-      <blockquote class="show-for-large-up">
+      <blockquote class="show-for-medium-up">
         <p>
           "Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!"
         </p>

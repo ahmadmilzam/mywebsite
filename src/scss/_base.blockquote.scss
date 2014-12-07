@@ -1,0 +1,14 @@
+.blockquote__header{
+  @extend %zeta;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: half($base-spacing-unit);
+}
+.blockquote__body{
+  font-family: $base-font-family-serif;
+  color: #999;
+}
+.blockquote__footer{
+  font-size: 85%;
+  color: #777;
+}

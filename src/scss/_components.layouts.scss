@@ -1,0 +1,73 @@
+/* ==========================================================================
+   LAYOUTS MODULE
+   ========================================================================== */
+
+
+/*
+   HEADER
+   ========================================================================== */
+.layout-header{
+  display: table;
+  @extend %pos-rel;
+  height: 100%;
+  width: 100%;
+  background-color: #446CB3;
+
+  h1{
+    line-height: 1.2;
+  }
+
+  p,
+  h1,
+  a{
+    color: #fff;
+  }
+}
+  .layout__intro{
+    display: table-cell;
+    table-layout: fixed;
+    vertical-align: middle;
+  }
+
+  .learn-more {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: $base-spacing-unit;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+
+
+
+
+/*
+   FOOTER
+   ========================================================================== */
+.layout-footer{
+  font-size: rem-calc(14);
+  padding: $base-spacing-unit;
+  color: #fff;
+  @extend %bg-primary;
+}
+
+
+// .valign-middle {
+//   display: table;
+//   table-layout: fixed;
+//   height: 100%;
+//   width: 100%;
+
+//   .columns{
+//     display: table-cell;
+//     table-layout: fixed;
+//     vertical-align: middle;
+//   }
+
+//   .columns{
+//     float: none;
+//   }
+// }
