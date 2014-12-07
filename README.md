@@ -25,11 +25,9 @@ And you're set!
 
 For Production, run:
 
-`grunt-build`
+`grunt build`
 
 ## Directory Structure
 
-  * `src/scss/_settings.scss`: Foundation configuration settings go in here
-  * `src/scss/app.scss`: Application styles go here
+  * `src/scss/app.scss`: Main style and settings go here
   * `src/js/app.js`: Main script go in here
-  * `src/js/libs/*.js`: Application's plugins / dependencies go here
