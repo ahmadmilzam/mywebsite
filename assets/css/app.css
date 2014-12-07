@@ -279,7 +279,7 @@
  *   @include font-size(12px);
  * }
  *
- * This will generate a rem-based font-size with its pixel fallback, as well as
+ * This will generate a rem-based font-size as well as
  * a unitless line-height which will place the element on your baseline, e.g.:
  *
  * .foo {
@@ -983,7 +983,6 @@ p {
 .lead,
 .icon-lg {
   font-size: 1.25rem;
-  line-height: 1.2;
 }
 
 /* [4] */
