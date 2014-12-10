@@ -4,7 +4,7 @@
     I've been lucky enough to work with some really great people over the years, and some of them have said some really nice things about me:
   </p>
   <div class="layout">
-    <div class="layout__item medium-4-6 testimonial-container pos-rel">
+    <div class="layout__unit small-1 medium-3-5 testimonial-container pos-rel">
 
       <blockquote class="testimonial">
         <h3 class="blockquote__header">
@@ -75,7 +75,7 @@
       </blockquote>
 
     </div>
-    <div class="layout__item medium-2-6">
+    <div class="layout__unit small-1 medium-2-5">
       <a href="#contact" class="btn btn--large btn--full" data-scroll>
         Hire me
       </a>

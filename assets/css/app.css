@@ -217,6 +217,7 @@
  * @params:
  *
  * $columns - The number of columns this should be
+ * $total-columns - The number of total columns
  * $last-column - Is this the last column? Default: false.
  * $center - Center these columns? Default: false.
  * $offset - # of columns to offset. Default: false.
@@ -327,10 +328,6 @@
 /* ==========================================================================
    Common CSS3 Mixins
    ========================================================================== */
-/*===============================
-=            COLUMNS            =
-===============================*/
-/*-----  End of COLUMNS  ------*/
 /*======================================
 =            DOUBLE BORDERS            =
 ======================================*/
@@ -347,13 +344,6 @@
 =            TRANSFORM            =
 =================================*/
 /*-----  End of TRANSFORM  ------*/
-/*==============================
-=            ROTATE            =
-==============================*/
-/*-----  End of ROTATE  ------*/
-/*=============================
-=            SCALE            =
-=============================*/
 /*-----  End of SCALE  ------*/
 /*==================================
 =            TRANSITION            =
@@ -362,6 +352,10 @@
 /*=======================================
 =            Vertical Middle            =
 =======================================*/
+/*-----  End of Vertical Middle  ------*/
+/*=========================================
+=            Horizontal Middle            =
+==========================================*/
 /*-----  End of Vertical Middle  ------*/
 /*=====================================
 =            Border Radius            =
@@ -376,6 +370,7 @@
  * [1] Normalize
  * [2] Reset
  * [3] Box Sizing
+ * [4] Shared
  */
 /* [1] */
 /* ==========================================================================
@@ -787,9 +782,8 @@ th {
  * As well as using normalize.css, it is often advantageous to remove all
  * margins from certain elements.
  */
-body,
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, pre, blockquote,
 dl, dd, ol, ul,
 form, fieldset, legend,
 figure,
@@ -848,6 +842,31 @@ html {
  * If we have included this file, set a variable to tell the rest of the
  * framework that global `box-sizing: border-box` has been set.
  */
+/* [4] */
+/*------------------------------------*\
+    #SHARED
+\*------------------------------------*/
+/**
+ * Where `margin-bottom` is concerned,this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: 1.5rem;
+}
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once,here.
+ */
+ul, ol, dd {
+  margin-left: 1.5rem;
+}
+
 /*
    BASE
    ========================================================================== */
@@ -875,7 +894,7 @@ html {
  * 1. Set the default `font-family`, `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ΓÇÿjumpsΓÇÖ when
+ * 2. Force scrollbars to always be visible to prevent awkward 'jumps' when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
@@ -884,6 +903,7 @@ html {
  */
 html {
   font-family: "proxima_nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 1em;
   /* [1] */
   line-height: 1.5;
@@ -911,13 +931,14 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: "proxima_nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.75rem;
   text-rendering: optimizeLegibility;
 }
 
 h1,
 .alpha {
   font-size: 2.25rem;
-  line-height: 1.5;
+  line-height: 1.33333;
 }
 
 h2,
@@ -929,19 +950,19 @@ h2,
 h3,
 .gamma {
   font-size: 1.5rem;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 h4,
 .delta {
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 h5,
 .epsilon {
   font-size: 1.125rem;
-  line-height: 1.5;
+  line-height: 1.33333;
 }
 
 h6,
@@ -952,18 +973,18 @@ h6,
 }
 
 .giga {
-  font-size: 3.875rem;
-  line-height: 1.5;
+  font-size: 6.875rem;
+  line-height: 1.09091;
 }
 
 .mega {
-  font-size: 3.25rem;
-  line-height: 1.5;
+  font-size: 4.25rem;
+  line-height: 1.05882;
 }
 
 .kilo {
-  font-size: 2.75rem;
-  line-height: 1.5;
+  font-size: 2.625rem;
+  line-height: 1.14286;
 }
 
 /* [3] */
@@ -976,10 +997,6 @@ h6,
  *
  * Predefine the variables below in order to alter and enable specific features.
  */
-p {
-  margin-bottom: 24px;
-}
-
 .lead,
 .icon-lg {
   font-size: 1.25rem;
@@ -1042,14 +1059,6 @@ img[height] {
 /* ==========================================================================
    LIST
    ========================================================================== */
-/**
- * Set Default list style positon inside
- */
-ul,
-ol {
-  list-style-position: inside;
-}
-
 /**
  * Remove extra vertical spacing when nesting lists.
  */
@@ -1465,6 +1474,15 @@ input[type="file"] {
 /**
  * We use these as default total columns throughout the framework.
  */
+/*
+   Default grid classess
+   ========================================================================== */
+/*
+   Old school grid classes
+   ========================================================================== */
+/*
+   Grid unit modifier
+   ========================================================================== */
 .layout {
   width: 100%;
   margin-left: auto;
@@ -1482,333 +1500,150 @@ input[type="file"] {
   max-width: none;
 }
 
-.layout__item {
+.layout__unit {
+  position: relative;
   padding-left: 12px;
   padding-right: 12px;
-  width: 100%;
   float: left;
 }
 
-.layout__item + .layout__item:last-child {
+.layout__unit + .layout__unit:last-child {
   float: right;
 }
 
-.layout__item + .layout__item.end {
+.layout__unit + .layout__unit.end {
   float: left;
 }
 
+/*
+   Default Grid Classes
+   ========================================================================== */
 @media only screen {
-  .layout__item {
-    position: relative;
-    padding-left: 12px;
-    padding-right: 12px;
-    float: left;
-  }
-
-  .small-1-6 {
-    width: 16.66667%;
-  }
-
-  .small-2-6 {
-    width: 33.33333%;
-  }
-
-  .small-3-6 {
-    width: 50%;
-  }
-
-  .small-4-6 {
-    width: 66.66667%;
-  }
-
-  .small-5-6 {
-    width: 83.33333%;
-  }
-
-  .small-6-6 {
+  .small-1 {
     width: 100%;
   }
 
-  .small-push-0-6 {
-    position: relative;
-    left: 0%;
-    right: auto;
+  .small-1-2 {
+    width: 50%;
   }
 
-  .small-push-1-6 {
-    position: relative;
-    left: 16.66667%;
-    right: auto;
+  .small-1-3 {
+    width: 33.33333%;
   }
 
-  .small-push-2-6 {
-    position: relative;
-    left: 33.33333%;
-    right: auto;
+  .small-2-3 {
+    width: 66.66667%;
   }
 
-  .small-push-3-6 {
-    position: relative;
-    left: 50%;
-    right: auto;
+  .small-1-4 {
+    width: 25%;
   }
 
-  .small-push-4-6 {
-    position: relative;
-    left: 66.66667%;
-    right: auto;
+  .small-3-4 {
+    width: 75%;
   }
 
-  .small-push-5-6 {
-    position: relative;
-    left: 83.33333%;
-    right: auto;
+  .small-1-5 {
+    width: 20%;
   }
 
-  .small-pull-0-6 {
-    position: relative;
-    right: 0%;
-    left: auto;
+  .small-2-5 {
+    width: 40%;
   }
 
-  .small-pull-1-6 {
-    position: relative;
-    right: 16.66667%;
-    left: auto;
+  .small-3-5 {
+    width: 60%;
   }
 
-  .small-pull-2-6 {
-    position: relative;
-    right: 33.33333%;
-    left: auto;
-  }
-
-  .small-pull-3-6 {
-    position: relative;
-    right: 50%;
-    left: auto;
-  }
-
-  .small-pull-4-6 {
-    position: relative;
-    right: 66.66667%;
-    left: auto;
-  }
-
-  .small-pull-5-6 {
-    position: relative;
-    right: 83.33333%;
-    left: auto;
+  .small-4-5 {
+    width: 80%;
   }
 }
 @media only screen and (min-width: 45.063em) {
-  .layout__item {
-    position: relative;
-    padding-left: 12px;
-    padding-right: 12px;
-    float: left;
-  }
-
-  .medium-1-6 {
-    width: 16.66667%;
-  }
-
-  .medium-2-6 {
-    width: 33.33333%;
-  }
-
-  .medium-3-6 {
-    width: 50%;
-  }
-
-  .medium-4-6 {
-    width: 66.66667%;
-  }
-
-  .medium-5-6 {
-    width: 83.33333%;
-  }
-
-  .medium-6-6 {
+  .medium-1 {
     width: 100%;
   }
 
-  .medium-push-0-6 {
-    position: relative;
-    left: 0%;
-    right: auto;
+  .medium-1-2 {
+    width: 50%;
   }
 
-  .medium-push-1-6 {
-    position: relative;
-    left: 16.66667%;
-    right: auto;
+  .medium-1-3 {
+    width: 33.33333%;
   }
 
-  .medium-push-2-6 {
-    position: relative;
-    left: 33.33333%;
-    right: auto;
+  .medium-2-3 {
+    width: 66.66667%;
   }
 
-  .medium-push-3-6 {
-    position: relative;
-    left: 50%;
-    right: auto;
+  .medium-1-4 {
+    width: 25%;
   }
 
-  .medium-push-4-6 {
-    position: relative;
-    left: 66.66667%;
-    right: auto;
+  .medium-3-4 {
+    width: 75%;
   }
 
-  .medium-push-5-6 {
-    position: relative;
-    left: 83.33333%;
-    right: auto;
+  .medium-1-5 {
+    width: 20%;
   }
 
-  .medium-pull-0-6 {
-    position: relative;
-    right: 0%;
-    left: auto;
+  .medium-2-5 {
+    width: 40%;
   }
 
-  .medium-pull-1-6 {
-    position: relative;
-    right: 16.66667%;
-    left: auto;
+  .medium-3-5 {
+    width: 60%;
   }
 
-  .medium-pull-2-6 {
-    position: relative;
-    right: 33.33333%;
-    left: auto;
-  }
-
-  .medium-pull-3-6 {
-    position: relative;
-    right: 50%;
-    left: auto;
-  }
-
-  .medium-pull-4-6 {
-    position: relative;
-    right: 66.66667%;
-    left: auto;
-  }
-
-  .medium-pull-5-6 {
-    position: relative;
-    right: 83.33333%;
-    left: auto;
+  .medium-4-5 {
+    width: 80%;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  .layout__item {
-    position: relative;
-    padding-left: 12px;
-    padding-right: 12px;
-    float: left;
-  }
-
-  .large-1-6 {
-    width: 16.66667%;
-  }
-
-  .large-2-6 {
-    width: 33.33333%;
-  }
-
-  .large-3-6 {
-    width: 50%;
-  }
-
-  .large-4-6 {
-    width: 66.66667%;
-  }
-
-  .large-5-6 {
-    width: 83.33333%;
-  }
-
-  .large-6-6 {
+  .large-1 {
     width: 100%;
   }
 
-  .large-push-0-6 {
-    position: relative;
-    left: 0%;
-    right: auto;
+  .large-1-2 {
+    width: 50%;
   }
 
-  .large-push-1-6 {
-    position: relative;
-    left: 16.66667%;
-    right: auto;
+  .large-1-3 {
+    width: 33.33333%;
   }
 
-  .large-push-2-6 {
-    position: relative;
-    left: 33.33333%;
-    right: auto;
+  .large-2-3 {
+    width: 66.66667%;
   }
 
-  .large-push-3-6 {
-    position: relative;
-    left: 50%;
-    right: auto;
+  .large-1-4 {
+    width: 25%;
   }
 
-  .large-push-4-6 {
-    position: relative;
-    left: 66.66667%;
-    right: auto;
+  .large-3-4 {
+    width: 75%;
   }
 
-  .large-push-5-6 {
-    position: relative;
-    left: 83.33333%;
-    right: auto;
+  .large-1-5 {
+    width: 20%;
   }
 
-  .large-pull-0-6 {
-    position: relative;
-    right: 0%;
-    left: auto;
+  .large-2-5 {
+    width: 40%;
   }
 
-  .large-pull-1-6 {
-    position: relative;
-    right: 16.66667%;
-    left: auto;
+  .large-3-5 {
+    width: 60%;
   }
 
-  .large-pull-2-6 {
-    position: relative;
-    right: 33.33333%;
-    left: auto;
-  }
-
-  .large-pull-3-6 {
-    position: relative;
-    right: 50%;
-    left: auto;
-  }
-
-  .large-pull-4-6 {
-    position: relative;
-    right: 66.66667%;
-    left: auto;
-  }
-
-  .large-pull-5-6 {
-    position: relative;
-    right: 83.33333%;
-    left: auto;
+  .large-4-5 {
+    width: 80%;
   }
 }
+/*
+   Old school minimal grid classes
+   ========================================================================== */
 /* [6] */
 /* [7] */
 /* ==========================================================================
@@ -2122,6 +1957,13 @@ input[type="file"] {
    LAYOUTS MODULE
    ========================================================================== */
 /*
+   BASE
+   ========================================================================== */
+html, body {
+  height: 100%;
+}
+
+/*
    HEADER
    ========================================================================== */
 .layout-header {
@@ -2132,6 +1974,11 @@ input[type="file"] {
 }
 .layout-header h1 {
   line-height: 1.2;
+}
+@media only screen and (min-width: 64.063em) {
+  .layout-header h1 {
+    font-size: 2.625rem;
+  }
 }
 .layout-header p,
 .layout-header h1,
@@ -2908,17 +2755,14 @@ input[type="file"] {
 .clearfix:before, .clearfix:after,
 .box:before,
 .layout:before,
-.layout .layout:before,
 .box:after,
-.layout:after,
-.layout .layout:after {
+.layout:after {
   content: " ";
   display: table;
 }
 .clearfix:after,
 .box:after,
-.layout:after,
-.layout .layout:after {
+.layout:after {
   clear: both;
 }
 
@@ -2978,10 +2822,6 @@ input[type="file"] {
 
 .bg-grey {
   background-color: #f9f9f9;
-}
-
-html, body {
-  height: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -13,14 +13,14 @@
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">
-        <div class="layout__item medium-4-6 layout__col layout__col">
+        <div class="layout__unit small-1 medium-3-5 layout__col layout__col">
           <h3 class="content-heading">Muse - Landing Page</h3>
           <p>
             I was asked to create an interactive and informative website for Muse,  mobile fashion shopping apps dedicated in serving at Indonesia.
             The task was to inform and engage with the audience in a way which would be exciting.
           </p>
         </div>
-        <div class="layout__item medium-2-6">
+        <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
             <li>
@@ -55,13 +55,13 @@
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">
-        <div class="layout__item medium-4-6">
+        <div class="layout__unit small-1 medium-3-5">
           <h3>Qualixen - Company Profile</h3>
           <p>
             I was asked to create an informative website and with a clean flat design and responsive for Qualixen, Structural Engineering Specialists for Oil &amp; Gas Industry.
           </p>
         </div>
-        <div class="layout__item medium-2-6">
+        <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
             <li>
@@ -99,13 +99,13 @@
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">
-        <div class="layout__item medium-4-6">
+        <div class="layout__unit small-1 medium-3-5">
           <h3 class="content-heading">Anona - Online Store Theme</h3>
           <p>
             A Minimal Responsive Template built using HTML5/CSS3 and jQuery. Works great across all devices.
           </p>
         </div>
-        <div class="layout__item medium-2-6">
+        <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
             <li>
@@ -140,13 +140,13 @@
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">
-        <div class="layout__item medium-4-6">
+        <div class="layout__unit small-1 medium-3-5">
           <h3 class="content-heading">Cominter - Online Store Theme</h3>
           <p>
             A Minimal Responsive Template built using HTML5/CSS3 and jQuery. Works great across all devices.
           </p>
         </div>
-        <div class="layout__item medium-2-6">
+        <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
             <li>

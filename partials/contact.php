@@ -1,7 +1,7 @@
 <div class="pv+ bg-grey" id="contact">
 
   <div class="layout">
-    <div class="layout__item">
+    <div class="layout__unit">
       <h2 class="text-center mb">Contact Me</h2>
       <p class="text-center">
         Please contact me if you have an enquiry regarding a new project or would like to discuss any future ones. I am always interested in working with new clients or hearing about exciting opportunities.
@@ -12,7 +12,7 @@
 
   <div class="layout">
 
-    <div class="layout__item medium-2-6 medium-push-4-6 small-mb">
+    <div class="layout__unit small-1 medium-1-3 small-mb">
       <h4>Contact Detail</h4>
       <p>
         P: +62 812 840 262 91
@@ -28,17 +28,17 @@
       </yl>
     </div>
 
-    <form class="layout__item medium-4-6 medium-pull-2-6" action="send_email.php" name="contactForm" id="contactForm" method="post" data-abide="ajax" autocomplete="off">
+    <form class="layout__unit small-1 medium-2-3" action="send_email.php" name="contactForm" id="contactForm" method="post" data-abide="ajax" autocomplete="off">
 
       <div class="layout">
-        <div class="layout__item medium-3-6">
+        <div class="layout__unit small-1 medium-1-2">
           <label for="name">
             <small>Name</small>
           </label>
           <input class="radius" id="name" type="text" name="name" placeholder="My name is*" required>
           <input class="radius first-name" id="firstname" type="email" name="first_name" placeholder="Your first name">
         </div>
-        <div class="layout__item medium-3-6">
+        <div class="layout__unit small-1 medium-1-2">
           <label for="email">
             <small>Email</small>
           </label>
@@ -46,13 +46,13 @@
         </div>
       </div>
       <div class="layout">
-        <div class="layout__item">
+        <div class="layout__unit small-1">
           <label for="phonenumber">
             <small>Phone number</small>
           </label>
           <input class="radius" id="phonenumber" type="tel" name="phone" placeholder="0899999999*" required pattern="[0-9]+">
         </div>
-        <div class="layout__item">
+        <div class="layout__unit small-1">
           <label for="website-url">
             <small>Website Url</small>
           </label>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="layout">
-        <div class="layout__item">
+        <div class="layout__unit small-1">
           <label for="message">
             <small>Project detail</small>
           </label>
@@ -68,13 +68,13 @@
         </div>
       </div>
       <div class="layout mb">
-        <div class="layout__item">
+        <div class="layout__unit small-1">
           <button class="btn btn--large btn--full" id="buttonSubmit" type="submit" data-loading="Please wait..">SEND</button>
         </div>
       </div>
 
       <div class="layout">
-        <div class="layout__item">
+        <div class="layout__unit small-1">
           <div class="feedback" id="feedback"></div>
         </div>
       </div>

@@ -163,12 +163,8 @@ $namespace: null;
  *     css
  */
 
-@import "1-tools/tools.functions-base";
-@import "1-tools/tools.functions-grids";
-@import "1-tools/tools.functions-responsive";
-
-@import "1-tools/tools.mixins-base";
-@import "1-tools/tools.mixins-css";
+@import "1-tools/tools.functions";
+@import "1-tools/tools.mixins";
 
 
 
@@ -182,6 +178,7 @@ $namespace: null;
  * [1] Normalize
  * [2] Reset
  * [3] Box Sizing
+ * [4] Shared
  */
 
 /* [1] */
@@ -192,6 +189,9 @@ $namespace: null;
 
 /* [3] */
 @import "2-generic/generic.box-sizing";
+
+/* [4] */
+@import "2-generic/generic.shared";
 
 
 
@@ -225,9 +225,9 @@ $heading-size-4:       20px;
 $heading-size-5:       18px;
 $heading-size-6:       16px;
 
-$heading-size-giga:    62px;
-$heading-size-mega:    52px;
-$heading-size-kilo:    44px;
+$heading-size-giga:    110px;
+$heading-size-mega:    68px;
+$heading-size-kilo:    42px;
 
 $heading-line-height:  1.5;
 $header-font-family:   $base-font-family;
@@ -701,7 +701,3 @@ $enable-responsive-margins:                   true;
 @import "trumps.fontsizes";
 @import "trumps.positioning";
 @import "trumps.bgcolor";
-
-html, body {
-  height: 100%;
-}

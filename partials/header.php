@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
   <link rel="author" href="https://plus.google.com/116499314183216878484">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">

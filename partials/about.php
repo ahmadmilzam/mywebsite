@@ -2,7 +2,7 @@
   <h2 class="text-center mb">Profile</h2>
   <div class="layout">
 
-    <div class="layout__item medium-3-6 text-center pos-rel wow fadeInLeft" data-wow-delay=".10s" data-wow-offset="150">
+    <div class="layout__unit small-1 medium-1-2 text-center pos-rel wow fadeInLeft" data-wow-delay=".10s" data-wow-offset="150">
       <img data-src-base="assets/img/layout/"
            data-src="<480:small/milzam.png,
                      <768:medium/milzam.png,
@@ -20,7 +20,7 @@
       </blockquote>
     </div>
 
-    <div class="layout__item medium-3-6 pos-rel wow fadeInRight" data-wow-delay=".15s" data-wow-offset="150">
+    <div class="layout__unit small-1 medium-1-2 pos-rel wow fadeInRight" data-wow-delay=".15s" data-wow-offset="150">
       <p class="text-justify">
         My name is Ahmad Milzam, living in Jakarta, Indonesia.
         I specialise in writing, <strong>architecting</strong> and

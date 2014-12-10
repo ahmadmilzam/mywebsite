@@ -5,13 +5,14 @@ module.exports = function(grunt) {
     sass: {
       options:{
         loadPath: [
-          'libs/csskit/scss'
+          'libs/csskit/scss',
         ],
         lineNumbers: false
       },
       dist: {
         options: {
-          style: 'compressed'
+          style: 'compressed',
+          sourcemap: 'none',
         },
         files: {
           'assets/css/app.min.css': 'src/scss/app.scss'
