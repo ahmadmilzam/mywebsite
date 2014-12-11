@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'icon';
-	src:url('fonts/icon.eot?-d95mv5');
-	src:url('fonts/icon.eot?#iefix-d95mv5') format('embedded-opentype'),
-		url('fonts/icon.woff?-d95mv5') format('woff'),
-		url('fonts/icon.ttf?-d95mv5') format('truetype'),
-		url('fonts/icon.svg?-d95mv5#icon') format('svg');
+	src:url('fonts/icon.eot?tf8l0h');
+	src:url('fonts/icon.eot?#iefixtf8l0h') format('embedded-opentype'),
+		url('fonts/icon.woff?tf8l0h') format('woff'),
+		url('fonts/icon.ttf?tf8l0h') format('truetype'),
+		url('fonts/icon.svg?tf8l0h#icon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-.icon {
+[class^="icon--"], [class*=" icon--"] {
 	font-family: 'icon';
 	speak: none;
 	font-style: normal;
@@ -23,24 +23,27 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paperplane:before {
+.icon--linkedin:before {
 	content: "\e600";
 }
-.icon-heart:before {
-	content: "\e602";
-}
-.icon-house:before {
-	content: "\e603";
-}
-.icon-arrow-down:before {
+.icon--paperplane:before {
 	content: "\e601";
 }
-.icon-twitter:before {
+.icon--arrow-down:before {
+	content: "\e602";
+}
+.icon--heart:before {
+	content: "\e603";
+}
+.icon--home:before {
+	content: "\e604";
+}
+.icon--twitter:before {
 	content: "\e60b";
 }
-.icon-facebook:before {
+.icon--facebook:before {
 	content: "\e60c";
 }
-.icon-googleplus:before {
+.icon--googleplus:before {
 	content: "\e60d";
 }

@@ -8,7 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.icon-lg{
+.icon--lg{
   @extend %lead;
 }
 .icon {
@@ -25,24 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paperplane:before {
+.icon--linkedin:before {
   content: "\e600";
 }
-.icon-heart:before {
-  content: "\e602";
-}
-.icon-house:before {
-  content: "\e603";
-}
-.icon-arrow-down:before {
+.icon--paperplane:before {
   content: "\e601";
 }
-.icon-twitter:before {
+.icon--arrow-down:before {
+  content: "\e602";
+}
+.icon--heart:before {
+  content: "\e603";
+}
+.icon--home:before {
+  content: "\e604";
+}
+.icon--twitter:before {
   content: "\e60b";
 }
-.icon-facebook:before {
+.icon--facebook:before {
   content: "\e60c";
 }
-.icon-googleplus:before {
+.icon--googleplus:before {
   content: "\e60d";
 }

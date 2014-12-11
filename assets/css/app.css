@@ -998,7 +998,7 @@ h6,
  * Predefine the variables below in order to alter and enable specific features.
  */
 .lead,
-.icon-lg {
+.icon--lg {
   font-size: 1.25rem;
 }
 
@@ -1925,31 +1925,35 @@ input[type="file"] {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paperplane:before {
+.icon--linkedin:before {
   content: "\e600";
 }
 
-.icon-heart:before {
-  content: "\e602";
-}
-
-.icon-house:before {
-  content: "\e603";
-}
-
-.icon-arrow-down:before {
+.icon--paperplane:before {
   content: "\e601";
 }
 
-.icon-twitter:before {
+.icon--arrow-down:before {
+  content: "\e602";
+}
+
+.icon--heart:before {
+  content: "\e603";
+}
+
+.icon--home:before {
+  content: "\e604";
+}
+
+.icon--twitter:before {
   content: "\e60b";
 }
 
-.icon-facebook:before {
+.icon--facebook:before {
   content: "\e60c";
 }
 
-.icon-googleplus:before {
+.icon--googleplus:before {
   content: "\e60d";
 }
 

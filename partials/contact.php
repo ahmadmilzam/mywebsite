@@ -22,9 +22,10 @@
         E: ahmadmilzam[at]yahoo[dot]com
       </p>
       <ul class="list-inline">
-        <li class="mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon-facebook icon-lg"></i></a></li>
-        <li class="mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><i class="icon icon-twitter icon-lg"></i></a></li>
-        <li class="mr-"><a href="https://plus.google.com/116499314183216878484/posts" title="Me on Google Plus"><i class="icon icon-googleplus icon-lg"></i></a></li>
+        <li class="mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon--facebook icon-lg"></i></a></li>
+        <li class="mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><i class="icon icon--twitter icon-lg"></i></a></li>
+        <li class="mr-"><a href="https://plus.google.com/116499314183216878484/posts" title="Me on Google Plus"><i class="icon icon--googleplus icon-lg"></i></a></li>
+        <li><a href="https://www.linkedin.com/profile/view?id=236075066" title="Me on Linkedin"><i class="icon icon--linkedin"></i></a></li>
       </ul>
     </div>
 
