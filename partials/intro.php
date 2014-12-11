@@ -8,6 +8,6 @@
     </h1>
   </div>
   <a href="#profile" class="learn-more bounceInDown" data-scroll>
-    <i class="icon icon-arrow-down text-2x"></i>
+    <i class="icon icon--arrow-down text-2x"></i>
   </a>
 </div>
