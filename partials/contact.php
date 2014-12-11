@@ -25,7 +25,7 @@
         <li class="mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon-facebook icon-lg"></i></a></li>
         <li class="mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><i class="icon icon-twitter icon-lg"></i></a></li>
         <li class="mr-"><a href="https://plus.google.com/116499314183216878484/posts" title="Me on Google Plus"><i class="icon icon-googleplus icon-lg"></i></a></li>
-      </yl>
+      </ul>
     </div>
 
     <form class="layout__unit small-1 medium-2-3" action="send_email.php" name="contactForm" id="contactForm" method="post" data-abide="ajax" autocomplete="off">
