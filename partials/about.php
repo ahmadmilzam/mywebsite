@@ -27,7 +27,7 @@
         <strong>scaling CSS</strong> for big websites in big teams.
         With a strong <strong>focus on performance</strong>,
         <strong>pragmatism</strong>, <strong>agile</strong>, and
-        <strong>robust development</strong>, I build front-ends that
+        <strong>robust development</strong>. I build front-ends that
         <strong>will scale</strong> and that <strong>will last</strong>.
         I also have a keen interest in <strong>mobile</strong> /
         <strong>responsive web development</strong>
