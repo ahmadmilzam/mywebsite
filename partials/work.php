@@ -37,7 +37,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/muse" title="View Website" class="btn btn--full btn--alert">
-            View Website <i class="icon icon-paperplane"></i>
+            View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>
       </div>
@@ -81,7 +81,7 @@
             </li>
           </ul>
           <a href="http://qualixen.com" title="View Website" class="btn btn--full">
-            View Website <i class="icon icon-paperplane"></i>
+            View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>
       </div>
@@ -122,7 +122,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/anona" title="View Website" class="btn btn--full btn--secondary">
-            View Website <i class="icon icon-paperplane"></i>
+            View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>
       </div>
@@ -163,7 +163,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/cominter" title="View Website" class="btn btn--full btn--success">
-            View Website <i class="icon icon-paperplane"></i>
+            View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>
       </div>
