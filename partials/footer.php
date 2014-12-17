@@ -4,7 +4,7 @@
         Copyright &copy; ahmadmilzam.com 2014
       </div>
       <div class="layout__unit small-1 medium-1-2 columns small-text-center medium-text-center large-text-right">
-        Made with <i class="icon icon-heart"></i> from my <i class="icon icon-house"></i> in Jakarta, Indonesia
+        Made with <i class="icon icon--heart"></i> from my <i class="icon icon--home"></i> in Jakarta, Indonesia
       </div>
     </div>
   </footer>

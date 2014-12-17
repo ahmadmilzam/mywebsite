@@ -938,7 +938,7 @@ h1, h2, h3, h4, h5, h6 {
 h1,
 .alpha {
   font-size: 2.25rem;
-  line-height: 1.33333;
+  line-height: 1.5;
 }
 
 h2,
@@ -950,19 +950,19 @@ h2,
 h3,
 .gamma {
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 h4,
 .delta {
   font-size: 1.25rem;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 h5,
 .epsilon {
   font-size: 1.125rem;
-  line-height: 1.33333;
+  line-height: 1.5;
 }
 
 h6,
@@ -974,17 +974,17 @@ h6,
 
 .giga {
   font-size: 6.875rem;
-  line-height: 1.09091;
+  line-height: 1.5;
 }
 
 .mega {
   font-size: 4.25rem;
-  line-height: 1.05882;
+  line-height: 1.5;
 }
 
 .kilo {
   font-size: 2.625rem;
-  line-height: 1.14286;
+  line-height: 1.5;
 }
 
 /* [3] */
@@ -1000,6 +1000,7 @@ h6,
 .lead,
 .icon--lg {
   font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 /* [4] */

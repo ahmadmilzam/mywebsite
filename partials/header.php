@@ -5,7 +5,6 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="stylesheet" href="assets/css/app<?php echo ENVIRONMENT == 'development' ? '.css' : '.min.css' ?>" />
-  <!-- Hello there! . If your looking at this. Maybe you are the people i'd love to work with. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,4 +27,21 @@
 
   <title>Ahmad Milzam - Front-end Web Architect and Developer | Jakarta Indonesia</title>
 </head>
+<!--
+  ___ ___ _____ ___    ___     ______  ___
+  | | | | | __| | |    | |    / ____ \ | |
+  | |_| | | |__ | |    | |    | |  | | | |
+  |  _  | | __| | |    | |    | |  | | |_|
+  | | | | | |__ | |___ | |___ | |__| | ___
+  |_| |_| |___| |____| |____| \______/ |_|
+
+  If your looking at this. Clearly you are my kind of person
+  and you are the people i'd love to work with.
+
+  Nice to meet you!
+
+  <3's
+
+  Milzam
+-->
 <body>

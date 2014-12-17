@@ -849,163 +849,176 @@
 // Licensed under the MIT license
 */
 
-  function makeImagesResponsive(){
+// function isElementInViewport (el) {
 
-      var viewport = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+//   //special bonus for those using jQuery
+//   if (typeof jQuery === "function" && el instanceof jQuery) {
+//     el = el[0];
+//   }
 
-    ////////GET ALL IMAGES////////
+//   var rect = el.getBoundingClientRect();
 
-    var images = document.getElementsByTagName('body')[0].getElementsByTagName('img');
-    if( images.length === 0 ){
-      return;
-    }
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+//   );
+// }
 
-    ////////HASATTR FUNCTION////////
+function makeImagesResponsive(){
 
-    var hasAttr;
-    if(!images[0].hasAttribute){ //IE <=7 fix
+  var viewport = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-      hasAttr = function(el, attrName){ //IE does not support Object.Prototype
-        return el.getAttribute(attrName) !== null;
-      };
+  ////////GET ALL IMAGES////////
 
-    } else {
+  var images = document.getElementsByTagName('body')[0].getElementsByTagName('img');
+  if( images.length === 0 ){
+    return;
+  }
 
-      hasAttr = function(el, attrName){
-        return el.hasAttribute(attrName);
-      };
+  ////////HAS ATTR FUNCTION////////
 
-    }
+  var hasAttr;
+  if(!images[0].hasAttribute){ //IE <=7 fix
 
-    ////////CHECK IF DISPLAY IS RETINA////////
+    hasAttr = function(el, attrName){ //IE does not support Object.Prototype
+      return el.getAttribute(attrName) !== null;
+    };
 
-    var retina = window.devicePixelRatio ? window.devicePixelRatio >= 1.2 ? 1 : 0 : 0;
+  } else {
 
-    ////////LOOP ALL IMAGES////////
+    hasAttr = function(el, attrName){
+      return el.hasAttribute(attrName);
+    };
 
-    for (var i = 0; i < images.length; i++) {
+  }
 
-        var image = images[i];
+  ////////CHECK IF DISPLAY IS RETINA////////
 
+  var retina = window.devicePixelRatio ? window.devicePixelRatio >= 1.2 ? 1 : 0 : 0;
 
-        //set attr names
+  ////////LOOP ALL IMAGES////////
 
-        var srcAttr = ( retina && hasAttr(image, 'data-src2x') ) ? 'data-src2x' : 'data-src';
-        var baseAttr = ( retina && hasAttr(image, 'data-src-base2x') ) ? 'data-src-base2x' : 'data-src-base';
+  for (var i = 0; i < images.length; i++) {
 
-        //check image attributes
+    var image = images[i];
 
-        if( !hasAttr(image, srcAttr) ){
-          continue;
-        }
+    // if ( isElementInViewport(image) ) {
 
-        var basePath = hasAttr(image, baseAttr) ? image.getAttribute(baseAttr) : '';
+      //set attr names
+      var srcAttr = ( retina && hasAttr(image, 'data-src2x') ) ? 'data-src2x' : 'data-src';
+      var baseAttr = ( retina && hasAttr(image, 'data-src-base2x') ) ? 'data-src-base2x' : 'data-src-base';
 
+      //check image attributes
+      if( !hasAttr(image, srcAttr) ){
+        continue;
+      }
 
-        //get attributes
-
-        var queries = image.getAttribute(srcAttr);
-
-
-
-        //split defined query list
-
-          var queries_array = queries.split(',');
-
-        //loop queries
-
-        for(var j = 0; j < queries_array.length; j++){
-
-          //split each individual query
-          var query = queries_array[j].replace(':','||').split('||');
-
-          //get condition and response
-          var condition = query[0];
-          var response = query[1];
+      var basePath = hasAttr(image, baseAttr) ? image.getAttribute(baseAttr) : '';
 
 
-          //set empty variables
-          var conditionpx;
-          var bool;
+      //get attributes
+      var queries = image.getAttribute(srcAttr);
+
+      //split defined query list
+      var queries_array = queries.split(',');
+
+      //loop queries
+      for(var j = 0; j < queries_array.length; j++){
+
+        //split each individual query
+        var query = queries_array[j].replace(':','||').split('||');
+
+        //get condition and response
+        var condition = query[0];
+        var response = query[1];
 
 
-          //check if condition is below
-          if(condition.indexOf('<') !== -1){
+        //set empty variables
+        var conditionpx;
+        var bool;
 
-            conditionpx = condition.split('<');
 
-            if(queries_array[(j -1)]){
+        //check if condition is below
+        if(condition.indexOf('<') !== -1){
 
-              var prev_query = queries_array[(j - 1)].split(/:(.+)/);
-              var prev_cond = prev_query[0].split('<');
+          conditionpx = condition.split('<');
 
-              bool =  (viewport <= conditionpx[1] && viewport > prev_cond[1]);
+          if(queries_array[(j -1)]){
 
-            } else {
+            var prev_query = queries_array[(j - 1)].split(/:(.+)/);
+            var prev_cond = prev_query[0].split('<');
 
-              bool =  (viewport <= conditionpx[1]);
-
-            }
+            bool =  (viewport <= conditionpx[1] && viewport > prev_cond[1]);
 
           } else {
 
-            conditionpx = condition.split('>');
-
-            if(queries_array[(j +1)]){
-
-              var next_query = queries_array[(j +1)].split(/:(.+)/);
-              var next_cond = next_query[0].split('>');
-
-              bool = (viewport >= conditionpx[1] && viewport < next_cond[1]);
-
-            } else {
-
-              bool = (viewport >= conditionpx[1]);
-
-            }
+            bool =  (viewport <= conditionpx[1]);
 
           }
 
+        } else {
 
-          //check if document.width meets condition
-          if(bool){
+          conditionpx = condition.split('>');
 
-            var isCrossDomain = response.indexOf('//') !== -1 ? 1 : 0;
+          if(queries_array[(j +1)]){
 
-            var new_source;
-            if(isCrossDomain === 1){
-              new_source = response;
-            } else {
-              new_source = basePath + response;
-            }
+            var next_query = queries_array[(j +1)].split(/:(.+)/);
+            var next_cond = next_query[0].split('>');
 
-            if(image.src !== new_source){
+            bool = (viewport >= conditionpx[1] && viewport < next_cond[1]);
 
-              //change img src to basePath + response
-              image.setAttribute('src', new_source);
+          } else {
 
-            }
+            bool = (viewport >= conditionpx[1]);
 
-            //break loop
-            break;
           }
 
         }
 
 
-    }
+        //check if document.width meets condition
+        if(bool){
+
+          var isCrossDomain = response.indexOf('//') !== -1 ? 1 : 0;
+
+          var new_source;
+          if(isCrossDomain === 1){
+            new_source = response;
+          } else {
+            new_source = basePath + response;
+          }
+
+          if(image.src !== new_source){
+
+            //change img src to basePath + response
+            image.setAttribute('src', new_source);
+
+          }
+
+          //break loop
+          break;
+        }
+
+      }
+    // }
 
   }
+
+}
 
 if(window.addEventListener){
 
   window.addEventListener('load', makeImagesResponsive, false);
   window.addEventListener('resize', makeImagesResponsive, false);
+  // window.addEventListener('scroll', makeImagesResponsive, false);
 
 } else { //ie <=8 fix
 
   window.attachEvent('onload', makeImagesResponsive);
   window.attachEvent('onresize', makeImagesResponsive);
+  // window.attachEvent('onscroll', makeImagesResponsive);
 
 }
 var App = (function(){
