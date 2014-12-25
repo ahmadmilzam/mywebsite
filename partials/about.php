@@ -1,4 +1,4 @@
-<div class="pv+">
+<div class="pv+ oh">
   <h2 class="text-center mb">Profile</h2>
   <div class="layout">
 

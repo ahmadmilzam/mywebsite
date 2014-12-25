@@ -2820,6 +2820,10 @@ html, body {
   position: relative;
 }
 
+.oh {
+  overflow: hidden;
+}
+
 .bg-primary,
 .layout-footer {
   background-color: #446cb3;
