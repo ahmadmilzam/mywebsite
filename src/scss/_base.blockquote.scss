@@ -1,11 +1,17 @@
+.blockquote{
+  border-left: rem-calc( quarter($base-spacing-unit) ) solid scale-color($base-background-color, $lightness: -10%);
+  padding-left: rem-calc( $base-spacing-unit );
+  padding-top: rem-calc( quarter($base-spacing-unit) );
+  padding-bottom: rem-calc( quarter($base-spacing-unit) );
+}
+
 .blockquote__header{
-  @extend %zeta;
-  font-weight: bold;
+  @extend %h4;
   color: #777;
-  margin-bottom: half($base-spacing-unit);
+  margin-bottom: rem-calc( halve($base-spacing-unit) );
 }
 .blockquote__body{
-  font-family: $base-font-family-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   color: #999;
 }
 .blockquote__footer{

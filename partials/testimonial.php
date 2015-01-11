@@ -1,12 +1,12 @@
 <div class="pv+">
-  <h2 class="text-center mb">Testimonials</h2>
+  <h2 class="h1 text-center mb">Testimonials</h2>
   <p class="text-center">
     I've been lucky enough to work with some really great people over the years, and some of them have said some really nice things about me:
   </p>
   <div class="layout">
     <div class="layout__unit small-1 medium-3-5 testimonial-container pos-rel">
 
-      <blockquote class="testimonial">
+      <blockquote class="blockquote">
         <h3 class="blockquote__header">
           Development Client
         </h3>
@@ -32,7 +32,7 @@
         </footer>
       </blockquote>
 
-      <blockquote class="testimonial">
+      <blockquote class="blockquote">
         <h3 class="blockquote__header">
           Development Client
         </h3>
@@ -46,7 +46,7 @@
         </footer>
       </blockquote>
 
-      <blockquote class="testimonial">
+      <blockquote class="blockquote">
         <h3 class="blockquote__header">
           Colleague
         </h3>
@@ -60,7 +60,7 @@
         </footer>
       </blockquote>
 
-      <blockquote class="testimonial">
+      <blockquote class="blockquote">
         <h3 class="blockquote__header">
           Development Client
         </h3>

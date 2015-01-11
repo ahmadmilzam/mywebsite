@@ -1,0 +1,92 @@
+// set light color for dark background-color
+$light-text-color: $btn-color;
+
+// and dark color for light background-color
+$dark-text-color: $base-text-color;
+
+// button color type modifier
+.btn--muse{
+
+  background-color: $color-alert;
+
+  @if($btn-border-width != 0) {
+    border-color: $color-alert;
+  }
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus{
+    background-color: scale-color($color-alert, $lightness: $btn-lightness-factor);
+  }
+  &:active{
+    background-color: scale-color($color-alert, $lightness: -$btn-lightness-factor);
+  }
+
+}
+
+.btn--cominter{
+
+  background-color: $color-success;
+
+  @if($btn-border-width != 0) {
+    border-color: $color-success;
+  }
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus{
+    background-color: scale-color($color-success, $lightness: $btn-lightness-factor);
+  }
+  &:active{
+    background-color: scale-color($color-success, $lightness: -$btn-lightness-factor);
+  }
+
+}
+
+.btn.btn--anona{
+
+  background-color: $color-secondary;
+
+  @if($btn-border-width != 0) {
+    border-color: $color-secondary;
+  }
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus{
+    background-color: scale-color($color-secondary, $lightness: $btn-lightness-factor);
+  }
+  &:active{
+    background-color: scale-color($color-secondary, $lightness: -$btn-lightness-factor);
+  }
+
+}
+
+.btn--qualixen{
+
+  background-color: $color-qualixen;
+
+  @if($btn-border-width != 0) {
+    border-color: $color-qualixen;
+  }
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus{
+    background-color: scale-color($color-qualixen, $lightness: $btn-lightness-factor);
+  }
+  &:active{
+    background-color: scale-color($color-qualixen, $lightness: -$btn-lightness-factor);
+  }
+
+}
+
+
+// font size modifer to increase font-size for .btn--large
+.btn--large{
+  font-size: rem-calc($base-font-size * $lede-size);
+}

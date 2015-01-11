@@ -1,4 +1,12 @@
-
+/*!
+ * my-online-portfolio
+ * Ahmad Milzam - Frontend Web Architect and Developer
+ * https://github.com/ahmadmilzam/csskit
+ * @author Ahmad Milzam <email@ahmadmilzam.com>
+ * @version 0.0.1
+ * Copyright . MIT licensed.
+ * 2015-01-12
+ */
 (function() {
   var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
@@ -1058,50 +1066,6 @@ var App = (function(){
       e.preventDefault();
       e.stopPropagation;
 
-      // validate the form
-      // var validator = new FormValidator('contactForm', [
-      // {
-      //   name: 'name',
-      //   display: 'Your name',
-      //   rules: 'required|alpha'
-      // },
-      // {
-      //   name: 'email',
-      //   display: 'Your email',
-      //   rules: 'required|alpha'
-      // },
-      // {
-      //   name: 'phone',
-      //   display: 'Your phone',
-      //   rules: 'required|numeric'
-      // },
-      // {
-      //   name: 'website',
-      //   display: 'Your website URL',
-      //   rules: 'valid_url'
-      // },
-      // {
-      //   name: 'message',
-      //   display: 'Your message',
-      //   rules: 'required|min_length[10]'
-      // }],
-      // function(errors, event) {
-      //   if (errors.length > 0) {
-      //     // Show the errors
-      //     var errorString = '';
-
-      //     for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
-      //       errorString += errors[i].message + '<br />';
-      //     }
-
-      //     el.innerHTML = errorString;
-      //   }
-      //   else{
-
-      //   }
-      //   return;
-      // });
-
       var formAction = this.getAttribute('action'),
           formMethod = this.getAttribute('method').toUpperCase(),
           formData = '',
@@ -1136,7 +1100,6 @@ var App = (function(){
       request.onreadystatechange = function () {
         if (request.readyState != 4 || request.status != 200) return;
         var responseJson = JSON.parse(request.responseText);
-        console.log(responseJson);
 
         if(responseJson.status == 200){
 

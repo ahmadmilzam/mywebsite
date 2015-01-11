@@ -10,33 +10,30 @@
     @extend %pos-rel;
   }
   .portfolio__desc{
-    color: #fff;
+    color: #f5f5f5;
     background-color: #f6f9fa;
-    h3, h4{
-      color: #fff;
-    }
   }
 
-.portfolio--primary{
+.portfolio--qualixen{
   .portfolio__desc{
-    background-color: #2c3e50;
+    background-color: scale-color($color-qualixen, $lightness: -12.5%);
   }
 }
 
-.portfolio--secondary{
+.portfolio--anona{
   .portfolio__desc{
-    background-color: #6C7A89;
+    background-color: scale-color($color-secondary, $lightness: -12.5%);
   }
 }
 
-.portfolio--success{
+.portfolio--cominter{
   .portfolio__desc{
-    background-color: #1BBC9B;
+    background-color: scale-color($color-success, $lightness: -12.5%);
   }
 }
 
-.portfolio--alert{
+.portfolio--muse{
   .portfolio__desc{
-    background-color: #F62459;
+    background-color: scale-color($color-alert, $lightness: -12.5%);
   }
 }

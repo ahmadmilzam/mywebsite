@@ -3,14 +3,12 @@
   $root = dirname(__FILE__);
   switch ($root) {
     //change your project path here
-    // laptop kantor
-    case 'D:\server\htdocs\project\web\mywebsite':
-    // PC Rumah
-    // case 'F:\Server\htdocs\ciledug-racing\public_html':
-        $enviroment = 'development';
+    // laptop
+    case 'D:\server\htdocs\project\website\mywebsite':
+      $enviroment = 'development';
     break;
     default:
-        $enviroment = 'production';
+      $enviroment = 'production';
     break;
   }
   define('ENVIRONMENT', $enviroment);

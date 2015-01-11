@@ -9,23 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="author" content="Ahmad Milzam">
-  <meta name="description" content="Online Portfolio of Ahmad Milzam, a Front-end Web Architect and Developer living in Jakarta, Indonesia">
+  <meta name="description" content="Online Portfolio of Ahmad Milzam, a Frontend Web Architect and Web Developer living in Jakarta, Indonesia">
 
   <meta property="og:title" content="Online Portfolio of Ahmad Milzam">
   <meta property="og:url" content="http://ahmadmilzam.com">
   <meta property="og:image" content="http://ahmadmilzam.com/assets/img/cover.jpg">
-  <meta property="og:description" content="Ahmad Milzam, a Front-end Web Architect and Developer living in Jakarta, Indonesia. Specialise in writing, architecting and scaling CSS for big websites in big teams. With a strong focus on performance.">
+  <meta property="og:description" content="Ahmad Milzam, a Frontend Web Architect and Web Developer living in Jakarta, Indonesia. Specialise in writing, architecting and scaling CSS for big websites in big teams. With a strong focus on performance.">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Ahmad Milzam - Front-end Web Architect and Developer | Jakarta Indonesia">
+  <meta property="og:site_name" content="Ahmad Milzam - Frontend Web Architect and Web Developer | Jakarta Indonesia">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@milzaaam">
   <meta name="twitter:creator" content="@milzaaam">
   <meta name="twitter:title" content="Online Portfolio of Ahmad Milzam">
-  <meta name="twitter:description" content="Ahmad Milzam, a Front-end Web Architect and Developer living in Jakarta, Indonesia. Specialise in writing, architecting and scaling CSS for big websites in big teams. With a strong focus on performance.">
+  <meta name="twitter:description" content="Ahmad Milzam, a Frontend Web Architect and Web Developer living in Jakarta, Indonesia. Specialise in writing, architecting and scaling CSS for big websites in big teams. With a strong focus on performance.">
   <meta name="twitter:image:src" content="http://ahmadmilzam.com/assets/img/cover.jpg">
 
-  <title>Ahmad Milzam - Front-end Web Architect and Developer | Jakarta Indonesia</title>
+  <title>Frontend Web Architect and Web Developer | Jakarta Indonesia</title>
 </head>
 <!--
   ___ ___ _____ ___    ___     ______  ___

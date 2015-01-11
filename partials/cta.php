@@ -1,11 +1,11 @@
 <div class="pv+ bg-grey" id="profile">
 
   <div class="layout pos-rel wow fadeInUp">
-    <div class="layout__unit small-1 medium-3-5 small-mb">
-      <p class="lead small-text-center medium-text-left large-text-left mb0">
-        I'm available for
+    <div class="layout__unit small-1 medium-3-5 small-mb medium-mb0">
+      <p class="lede small-text-justify medium-text-left mb0">
+        I'm currently considering new
         <strong>freelance</strong> or
-        <strong>direct client projects</strong> in Q1, 2015.<br>
+        <strong>direct client projects</strong> for Q2, 2015.<br>
         If you are interested in working together,
         contact details can be found below.
       </p>

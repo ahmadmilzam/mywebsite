@@ -1,8 +1,8 @@
 .badge{
   display: inline-block;
-  padding: quarter($base-spacing-unit);
-  margin-bottom: quarter($base-spacing-unit);
-  border: 1px solid #fff;
+  padding: rem-calc( quarter($base-spacing-unit) );
+  margin-bottom: rem-calc( quarter($base-spacing-unit) );
+  border: 1px solid $color-white;
   border-radius: $base-radius;
   line-height: 1;
 }

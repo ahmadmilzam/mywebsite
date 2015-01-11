@@ -1,45 +1,116 @@
 module.exports = function(grunt) {
+
+  /**
+   * Dynamically load npm tasks
+   */
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+  /**
+   * CSSKit Grunt config
+   */
   grunt.initConfig({
+
+    /**
+     * Read package.json file
+     */
     pkg: grunt.file.readJSON('package.json'),
 
+    /**
+     * Set project info
+     */
+    project: {
+      src: 'src',
+      assets: 'assets',
+      css: {
+        main: [
+          '<%= project.src %>/scss/app.scss'
+        ]
+      }
+    },
+
+    /**
+     * Project banner
+     * Dynamically appended to CSS/JS files
+     * Inherits text from package.json
+     */
+    tag: {
+      banner: '/*!\n' +
+              ' * <%= pkg.name %>\n' +
+              ' * <%= pkg.title %>\n' +
+              ' * <%= pkg.url %>\n' +
+              ' * @author <%= pkg.author %>\n' +
+              ' * @version <%= pkg.version %>\n' +
+              ' * Copyright <%= pkg.copyright %>. <%= pkg.license %> licensed.\n' +
+              ' * <%= grunt.template.today("yyyy-mm-dd") %>\n' +
+              ' */\n'
+    },
+
+    /**
+     * Compile Sass/SCSS files
+     * https://github.com/gruntjs/grunt-contrib-sass
+     * Compiles all Sass/SCSS files and appends project banner
+     */
     sass: {
-      options:{
-        loadPath: [
-          'libs/csskit/scss',
-        ],
-        lineNumbers: false
-      },
-      dist: {
+      compile:{
         options: {
-          style: 'compressed',
-          sourcemap: 'none',
-        },
-        files: {
-          'assets/css/app.min.css': 'src/scss/app.scss'
-        }
-      },
-      dev:{
-        options: {
+          loadPath: 'libs/csskit/src/scss/',
+          banner: '<%= tag.banner %>',
           style: 'expanded'
         },
         files: {
-          'assets/css/app.css': 'src/scss/app.scss'
+          '<%= project.assets %>/css/app.css' : '<%= project.css.main %>'
         }
       }
     },
 
+    /**
+     * Parse CSS and add vendor-prefixed CSS properties
+     * using the Can I Use database.
+     * Based on Autoprefixer.
+     * https://github.com/nDmitry/grunt-autoprefixer
+     */
+    autoprefixer: {
+      dist: {
+        options: {
+          browsers: [
+            'last 2 versions',
+            '> 1%',
+            'ie 9'
+          ],
+          map: false
+        },
+        files: {
+          '<%= project.assets %>/css/app.prefixed.css' : ['<%= project.assets %>/css/app.css']
+        }
+      }
+    },
+
+    /**
+     * Runs tasks minify the script after prefixed with autoprefixer
+     * https://github.com/nDmitry/grunt-autoprefixer
+     */
+    cssmin: {
+      combine: {
+        files: {
+          '<%= project.assets %>/css/app.min.css' : ['<%= project.assets %>/css/app.prefixed.css']
+        },
+      },
+    },
+
+    /**
+     * Concatenate files.
+     * https://github.com/gruntjs/grunt-contrib-concat
+     */
     concat: {
       options: {
-        banner: '\n'
+        banner: '<%= tag.banner %>'
       },
-      vendor: {
+      target: {
         src: [
           // required library script
-          // 'src/js/raf.js',
           'src/js/wow.js',
           'src/js/smoothscroll.js',
           'src/js/responsive-img.js',
-          // 'src/js/validate.js',
 
           // my script
           'src/js/app.js'
@@ -48,21 +119,10 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
-      grunt: {
-        files: ['Gruntfile.js'],
-        tasks: ['development-task']
-      },
-      sass: {
-        files: ['src/scss/**/*.scss', 'libs/csskit/scss/**/*.scss'],
-        tasks: ['development-task']
-      },
-      js: {
-        files: 'src/js/**/*.js',
-        tasks: ['development-task']
-      }
-    },
-
+    /**
+     * Minify files with UglifyJS.
+     * https://github.com/gruntjs/grunt-contrib-uglify
+     */
     uglify: {
       options: {
         mangle: true,
@@ -74,32 +134,49 @@ module.exports = function(grunt) {
           'assets/js/app.min.js':['assets/js/app.js']
         }
       }
+    },
+
+    /**
+     * Runs tasks against changed watched files
+     * https://github.com/gruntjs/grunt-contrib-watch
+     * Watching development files and run concat/compile tasks
+     */
+    watch: {
+      grunt: {
+        files: ['Gruntfile.js'],
+        tasks: ['sass:compile']
+      },
+      sass: {
+        files: [
+          '<%= project.src %>/scss/**/*.{scss, sass}'
+        ],
+        tasks: ['sass:compile']
+      }
     }
+
   });
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask(
-    'development-task',
-    [
-      'sass:dev',
-      'concat:vendor'
-    ]
-  );
+  /**
+   * Default task
+   * Run `grunt` on the command line
+   */
+  grunt.registerTask('default', [
+    'sass:compile',
+    'concat:target',
+    'watch'
+  ]);
 
-  grunt.registerTask(
-    'production-task',
-    [
-      'sass:dist',
-      'concat:vendor',
-      'uglify'
-    ]
-  );
-
-  grunt.registerTask('build', ['production-task']);
-  grunt.registerTask('default', ['development-task','watch']);
+  /**
+   * Build task
+   * Run `grunt build` on the command line
+   * Then compress all JS/CSS files
+   */
+  grunt.registerTask('build', [
+    'sass:compile',
+    'autoprefixer:dist',
+    'cssmin:combine',
+    'uglify:target'
+  ]);
 
 }

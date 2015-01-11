@@ -20,19 +20,18 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #446CB3;
+  color: $color-white;
 
-  h1{
+  .headline{
     line-height: 1.2;
     @media #{$large-up}{
-      font-size: rem-calc($heading-size-kilo);
+      font-size: rem-calc(modular-scale(2, $base-font-size, $golden));
     }
   }
 
-  p,
-  h1,
-  a{
-    color: #fff;
-  }
+  // a{
+  //   color: $color-white;
+  // }
 }
   .layout__intro{
     display: table-cell;
@@ -47,8 +46,9 @@ html, body {
     left: 0;
     bottom: $base-spacing-unit;
 
+    &,
     &:hover{
-      color: #fff;
+      color: $color-white;
     }
   }
 
@@ -61,7 +61,7 @@ html, body {
 .layout-footer{
   font-size: rem-calc(14);
   padding: $base-spacing-unit;
-  color: #fff;
+  color: $color-white;
   @extend %bg-primary;
 }
 

@@ -2,7 +2,7 @@
 
   <div class="layout">
     <div class="layout__unit">
-      <h2 class="text-center mb">Contact Me</h2>
+      <h2 class="h1 text-center mb">Contact Me</h2>
       <p class="text-center">
         Please contact me if you have an enquiry regarding a new project or would like to discuss any future ones. I am always interested in working with new clients or hearing about exciting opportunities.
       </p>
@@ -14,12 +14,12 @@
 
     <div class="layout__unit small-1 medium-1-3 small-mb">
       <h4>Contact Detail</h4>
-      <p>
-        P: +62 812 840 262 91
+      <p itemscope itemtype="http://schema.org/Person">
+        P: <span itemprop="telephone" content="+6281284026291">+62 812 840 262 91</span>
         <br>
-        E: email[at]ahmadmilzam[dot]com
+        E: <span itemprop="email" content="email@ahmadmilzam.com">email[at]ahmadmilzam[dot]com</span>
         <br>
-        E: ahmadmilzam[at]yahoo[dot]com
+        E: <span itemprop="email" content="email@ahmadmilzam.com">ahmadmilzam[at]yahoo[dot]com</span>
       </p>
       <ul class="list-inline">
         <li class="mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon--facebook icon-lg"></i></a></li>

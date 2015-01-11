@@ -1,5 +1,5 @@
 <div class="pv+ oh">
-  <h2 class="text-center mb">Profile</h2>
+  <h2 class="h1 text-center mb">Profile</h2>
   <div class="layout">
 
     <div class="layout__unit small-1 medium-1-2 text-center pos-rel wow fadeInLeft" data-wow-delay=".10s" data-wow-offset="150">

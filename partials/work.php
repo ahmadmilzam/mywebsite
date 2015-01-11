@@ -1,8 +1,8 @@
 <div class="pt+ bg-grey" id="work">
 
-  <h2 class="text-center mb">Recent Works</h2>
+  <h2 class="h1 text-center mb">Recent Works</h2>
 
-  <div class="portfolio portfolio--alert">
+  <div class="portfolio portfolio--muse">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
            data-src="<480:medium/muse.jpg,
@@ -36,7 +36,7 @@
               <span class="badge">jQuery</span>
             </li>
           </ul>
-          <a href="http://demo.ahmadmilzam.com/muse" title="View Website" class="btn btn--full btn--alert">
+          <a href="http://demo.ahmadmilzam.com/muse" title="View Website" class="btn btn--full btn--muse">
             View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>
@@ -44,7 +44,7 @@
     </div>
   </div>
 
-  <div class="portfolio portfolio--primary">
+  <div class="portfolio portfolio--qualixen">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
            data-src="<480:medium/qualixen.jpg,
@@ -80,7 +80,7 @@
               <span class="badge">Google Map API V3</span>
             </li>
           </ul>
-          <a href="http://qualixen.com" title="View Website" class="btn btn--full">
+          <a href="http://qualixen.com" title="View Website" class="btn btn--full btn--qualixen">
             View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>
@@ -88,7 +88,7 @@
     </div>
   </div>
 
-  <div class="portfolio portfolio--secondary">
+  <div class="portfolio portfolio--anona">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
            data-src="<480:medium/anona.jpg,
@@ -121,7 +121,7 @@
               <span class="badge">jQuery</span>
             </li>
           </ul>
-          <a href="http://demo.ahmadmilzam.com/anona" title="View Website" class="btn btn--full btn--secondary">
+          <a href="http://demo.ahmadmilzam.com/anona" title="View Website" class="btn btn--full btn--anona">
             View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>
@@ -129,7 +129,7 @@
     </div>
   </div>
 
-  <div class="portfolio portfolio--success">
+  <div class="portfolio portfolio--cominter">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
            data-src="<480:medium/cominter.jpg,
@@ -162,7 +162,7 @@
               <span class="badge">jQuery</span>
             </li>
           </ul>
-          <a href="http://demo.ahmadmilzam.com/cominter" title="View Website" class="btn btn--full btn--success">
+          <a href="http://demo.ahmadmilzam.com/cominter" title="View Website" class="btn btn--full btn--cominter">
             View Website <i class="icon icon--paperplane"></i>
           </a>
         </div>

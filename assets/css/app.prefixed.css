@@ -544,7 +544,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -685,8 +684,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -804,14 +801,10 @@ ins {
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1025,7 +1018,6 @@ a {
   color: #446cb3;
   text-decoration: none;
   line-height: inherit;
-  -webkit-transition: color 0.3s ease-out 0s;
   transition: color 0.3s ease-out 0s;
 }
 a:hover, a:focus {
@@ -1170,8 +1162,6 @@ input[type="month"],
 input[type="time"],
 input[type="week"],
 select {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 0.75rem;
@@ -1452,7 +1442,6 @@ input[type="file"] {
   border-style: solid;
   border-color: #446cb3;
   border-radius: 3px;
-  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn, .btn:hover, .btn:active, .btn:focus {
@@ -1493,7 +1482,6 @@ input[type="file"] {
 .btn--muse {
   background-color: #DB0A5B;
   border-color: #DB0A5B;
-  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--muse:hover, .btn--muse:focus {
@@ -1506,7 +1494,6 @@ input[type="file"] {
 .btn--cominter {
   background-color: #03C9A9;
   border-color: #03C9A9;
-  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--cominter:hover, .btn--cominter:focus {
@@ -1519,7 +1506,6 @@ input[type="file"] {
 .btn.btn--anona {
   background-color: #ABB7B7;
   border-color: #ABB7B7;
-  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn.btn--anona:hover, .btn.btn--anona:focus {
@@ -1532,7 +1518,6 @@ input[type="file"] {
 .btn--qualixen {
   background-color: #2c3e50;
   border-color: #2c3e50;
-  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--qualixen:hover, .btn--qualixen:focus {
@@ -2810,5 +2795,3 @@ html, body {
 .bg-grey {
   background-color: #f0f0f0;
 }
-
-/*# sourceMappingURL=app.css.map */

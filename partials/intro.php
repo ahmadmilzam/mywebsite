@@ -1,10 +1,10 @@
-<div class="layout-header text-center" id="home">
+<div class="layout-header text-center" id="home" itemscope itemtype="http://schema.org/Person">
   <div class="layout__intro">
-    <p class="lead">Hello, my name is</p>
-    <h1>
-      Ahmad Milzam
+    <p class="lede">Hello, my name is</p>
+    <h1 class="headline">
+      <span itemprop="name">Ahmad Milzam</span>
       <br>
-      <small>Front-end Web Architect &amp; Developer</small>
+      <small><span itemprop="brand">Frontend Web Architect &amp; Developer</span></small>
     </h1>
   </div>
   <a href="#profile" class="learn-more bounceInDown" data-scroll>

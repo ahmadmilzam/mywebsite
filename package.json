@@ -1,11 +1,42 @@
 {
-  "name": "ahmad-milzam-online-portfolio",
+  "name": "my-online-portfolio",
+  "title": "Ahmad Milzam - Frontend Web Architect and Developer",
+  "url": "https://github.com/ahmadmilzam/csskit",
   "version": "0.0.1",
+  "description": "My online portfolio build with CSSKit - SASS Based, BEM, OOCSS Framework",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-watch": "~0.5.3"
-  }
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "matchdep": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadmilzam/mywebsite.git"
+  },
+  "keywords": [
+    "css",
+    "css",
+    "framework",
+    "bem",
+    "oocss"
+  ],
+  "author": "Ahmad Milzam <email@ahmadmilzam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmadmilzam/mywebsite/issues"
+  },
+  "homepage": "https://github.com/ahmadmilzam/mywebsite"
 }
