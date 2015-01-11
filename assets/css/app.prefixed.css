@@ -1503,15 +1503,15 @@ input[type="file"] {
   background-color: #02a187;
 }
 
-.btn.btn--anona {
+.btn--anona {
   background-color: #ABB7B7;
   border-color: #ABB7B7;
   transition: background-color 0.3s ease-out 0s;
 }
-.btn.btn--anona:hover, .btn.btn--anona:focus {
+.btn--anona:hover, .btn--anona:focus {
   background-color: #bcc5c5;
 }
-.btn.btn--anona:active {
+.btn--anona:active {
   background-color: #859696;
 }
 
