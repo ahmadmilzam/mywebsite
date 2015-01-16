@@ -5,7 +5,7 @@
       <p class="lede small-text-justify medium-text-left mb0">
         I'm currently considering new
         <strong>freelance</strong> or
-        <strong>direct client projects</strong> for Q2, 2015.
+        <strong>direct client projects</strong> for <strong>Q2, 2015</strong>.
         If you are interested in working together,
         contact details can be found below.
       </p>
