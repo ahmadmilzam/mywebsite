@@ -7,7 +7,7 @@ $dark-text-color: $base-text-color;
 // button color type modifier
 .btn--muse{
 
-  background-color: $color-alert;
+  background-color: lighten($color-alert, 5%);
 
   @if($btn-border-width != 0) {
     border-color: $color-alert;
@@ -17,17 +17,17 @@ $dark-text-color: $base-text-color;
 
   &:hover,
   &:focus{
-    background-color: scale-color($color-alert, $lightness: $btn-lightness-factor);
+    background-color: lighten($color-alert, $btn-lightness-factor);
   }
   &:active{
-    background-color: scale-color($color-alert, $lightness: -$btn-lightness-factor);
+    background-color: darken($color-alert, $btn-lightness-factor);
   }
 
 }
 
 .btn--cominter{
 
-  background-color: $color-success;
+  background-color: lighten($color-success, 5%);
 
   @if($btn-border-width != 0) {
     border-color: $color-success;
@@ -37,17 +37,17 @@ $dark-text-color: $base-text-color;
 
   &:hover,
   &:focus{
-    background-color: scale-color($color-success, $lightness: $btn-lightness-factor);
+    background-color: lighten($color-success, $btn-lightness-factor);
   }
   &:active{
-    background-color: scale-color($color-success, $lightness: -$btn-lightness-factor);
+    background-color: darken($color-success, $btn-lightness-factor);
   }
 
 }
 
 .btn--anona{
 
-  background-color: $color-secondary;
+  background-color: lighten($color-secondary, 5%);
 
   @if($btn-border-width != 0) {
     border-color: $color-secondary;
@@ -57,17 +57,17 @@ $dark-text-color: $base-text-color;
 
   &:hover,
   &:focus{
-    background-color: scale-color($color-secondary, $lightness: $btn-lightness-factor);
+    background-color: lighten($color-secondary, $btn-lightness-factor);
   }
   &:active{
-    background-color: scale-color($color-secondary, $lightness: -$btn-lightness-factor);
+    background-color: darken($color-secondary, $btn-lightness-factor);
   }
 
 }
 
 .btn--qualixen{
 
-  background-color: $color-qualixen;
+  background-color: lighten($color-qualixen, 5%);
 
   @if($btn-border-width != 0) {
     border-color: $color-qualixen;
@@ -77,10 +77,10 @@ $dark-text-color: $base-text-color;
 
   &:hover,
   &:focus{
-    background-color: scale-color($color-qualixen, $lightness: $btn-lightness-factor);
+    background-color: lighten($color-qualixen, $btn-lightness-factor);
   }
   &:active{
-    background-color: scale-color($color-qualixen, $lightness: -$btn-lightness-factor);
+    background-color: darken($color-qualixen, $btn-lightness-factor);
   }
 
 }

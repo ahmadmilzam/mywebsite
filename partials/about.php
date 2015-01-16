@@ -10,12 +10,14 @@
                      >960:large/milzam.png"
       alt="Ahmad Milzam">
       <br>
-      <blockquote class="hide-for-medium-up">
+      <blockquote class="blockquote hide-for-medium-up">
         <p class="blockquote__body">
           Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!
         </p>
         <footer class="blockquote__footer">
-          <cite>TURN.ON.IDEAS, <a href="http://thegrowthlab.co.nz">Growthlab Project</a></cite>
+          <cite>
+            <a href="http://thegrowthlab.co.nz">TURN.ON.IDEAS</a>, Web Designer
+          </cite>
         </footer>
       </blockquote>
     </div>
@@ -35,11 +37,15 @@
         as you can see by <strong>this very website</strong>.
       </p>
 
-      <blockquote class="show-for-medium-up">
-        <p>
-          "Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!"
+      <blockquote class="blockquote">
+        <p class="blockquote__body">
+          Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!
         </p>
-        <cite>TURN.ON.IDEAS, <a href="http://thegrowthlab.co.nz">Growthlab Project</a></cite>
+        <footer class="blockquote__footer">
+          <cite>
+            <a href="http://thegrowthlab.co.nz">TURN.ON.IDEAS</a>, Web Designer
+          </cite>
+        </footer>
       </blockquote>
 
       <p class="text-justify">
