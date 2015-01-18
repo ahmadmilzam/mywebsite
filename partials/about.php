@@ -37,7 +37,7 @@
         as you can see by <strong>this very website</strong>.
       </p>
 
-      <blockquote class="blockquote">
+      <blockquote class="blockquote show-for-medium-up">
         <p class="blockquote__body">
           Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!
         </p>
