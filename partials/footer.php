@@ -1,7 +1,7 @@
-  <footer class="layout-footer" itemscope itemtype="http://schema.org/Person">
+  <footer class="layout-footer">
     <div class="layout">
       <div class="layout__unit small-1 medium-1-2 small-text-center medium-text-center large-text-left columns">
-        Copyright &copy; <span itemprop="url" content="http://ahmadmilzam.com">ahmadmilzam.com</span> 2014
+        Copyright &copy; ahmadmilzam.com <?php echo date('Y'); ?>
       </div>
       <div class="layout__unit small-1 medium-1-2 columns small-text-center medium-text-center large-text-right">
         Made with <i class="icon icon--heart"></i> from my <i class="icon icon--home"></i> in Jakarta, Indonesia

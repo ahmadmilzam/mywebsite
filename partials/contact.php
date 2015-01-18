@@ -14,12 +14,12 @@
 
     <div class="layout__unit small-1 medium-1-3 small-mb">
       <h4>Contact Detail</h4>
-      <p itemscope itemtype="http://schema.org/Person">
-        P: <span itemprop="telephone" content="+6281284026291">+62 812 840 262 91</span>
+      <p>
+        P: +62 812 840 262 91
         <br>
-        E: <span itemprop="email" content="email@ahmadmilzam.com">email[at]ahmadmilzam[dot]com</span>
+        E: email[at]ahmadmilzam[dot]com
         <br>
-        E: <span itemprop="email" content="email@ahmadmilzam.com">ahmadmilzam[at]yahoo[dot]com</span>
+        E: ahmadmilzam[at]yahoo[dot]com
       </p>
       <ul class="list-inline">
         <li class="mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon--facebook icon-lg"></i></a></li>
@@ -76,7 +76,7 @@
 
       <div class="layout">
         <div class="layout__unit small-1">
-          <div class="feedback" id="feedback"></div>
+          <div class="feedback mt-" id="feedback"></div>
         </div>
       </div>
     </form>

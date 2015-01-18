@@ -1,10 +1,11 @@
 ﻿<?php
 
-define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
+$response = array();
 
-$error = '';
+$response['status'] = 401;
+$response['msg'] = '';
 
-if(! $_POST OR !IS_AJAX)
+if(! $_POST OR count($_POST) == 0)
 {
   echo "Back off man, i'm a scientist!";
   exit;
@@ -23,27 +24,27 @@ $message = trim($_POST['message']);
 
 if(empty($name) OR empty($email) OR empty($message))
 {
-  $error = "Are you joking ?";
+  $response['msg'] = "Are you joking ?";
 }
 
 if(strlen($name) < 4 OR strlen($message) < 10 OR strlen($email) < 9)
 {
-  $error = "Are you joking ?";
+  $response['msg'] = "Are you joking ?";
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $error = "Plase insert a valid email address";
+  $response['msg'] = "Plase insert a valid email address";
 }
 
 if(!empty($website) && !filter_var($website, FILTER_VALIDATE_URL))
 {
-  $error = "Plase insert a valid url";
+  $response['msg'] = "Plase insert a valid url";
 }
 
-if ($error !== '')
+if ($response['msg'] !== '')
 {
   header('Content-type: application/json');
-  echo json_encode(array('msg' => $error));
+  echo json_encode($response);
   exit;
 }
 
@@ -82,13 +83,14 @@ else
 
     if(!$mail->Send())
     {
-      $error = 'An error occured. Mail error: '.$mail->ErrorInfo;
+      $response['msg'] = 'An error occured. Mail error: '.$mail->ErrorInfo;
     }
     else
     {
-      $error = 'Thank you very much for your feedback :)';
+      $response['msg'] = 'Thank you very much for your feedback :)';
+      $response['status'] = 200;
     }
     header('Content-type: application/json');
-    echo json_encode(array('msg' => $error) );
+    echo json_encode($response);
     exit;
   }
