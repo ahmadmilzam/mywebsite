@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-01-16
+ * 2015-02-01
  */
 
 @charset "UTF-8";
@@ -333,6 +333,9 @@
    ========================================================================== */
 /*
    Horizontal Middle
+   ========================================================================== */
+/*
+   VH middle
    ========================================================================== */
 /*
    Border Radius
@@ -1018,6 +1021,7 @@ a {
   color: #446cb3;
   text-decoration: none;
   line-height: inherit;
+  -webkit-transition: color 0.3s ease-out 0s;
   transition: color 0.3s ease-out 0s;
 }
 a:hover, a:focus {
@@ -1562,6 +1566,7 @@ input[type="file"] {
   border-style: solid;
   border-color: #446cb3;
   border-radius: 3px;
+  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn, .btn:hover, .btn:active, .btn:focus {
@@ -1602,6 +1607,7 @@ input[type="file"] {
 .btn--muse {
   background-color: #f30b65;
   border-color: #DB0A5B;
+  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--muse:hover, .btn--muse:focus {
@@ -1614,6 +1620,7 @@ input[type="file"] {
 .btn--cominter {
   background-color: #03e2be;
   border-color: #03C9A9;
+  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--cominter:hover, .btn--cominter:focus {
@@ -1626,6 +1633,7 @@ input[type="file"] {
 .btn--anona {
   background-color: #b9c3c3;
   border-color: #ABB7B7;
+  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--anona:hover, .btn--anona:focus {
@@ -1638,6 +1646,7 @@ input[type="file"] {
 .btn--qualixen {
   background-color: #354b60;
   border-color: #2c3e50;
+  -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--qualixen:hover, .btn--qualixen:focus {
@@ -1666,7 +1675,8 @@ input[type="file"] {
   padding: 0;
   list-style: none;
 }
-.list-inline > li {
+
+.list-inline__item {
   display: inline-block;
 }
 
@@ -1892,7 +1902,6 @@ input[type="file"] {
 }
 
 .feedback {
-  margin-top: 12px;
   color: #03C9A9;
   font-weight: bold;
 }
@@ -2821,15 +2830,15 @@ html, body {
 /* ==========================================================================
    Text Transform Helper Classes
    ========================================================================== */
-.uppercase {
+.text-uppercase {
   text-transform: uppercase;
 }
 
-.lowercase {
+.text-lowercase {
   text-transform: lowercase;
 }
 
-.capitalize {
+.text-capitalize {
   text-transform: capitalize;
 }
 

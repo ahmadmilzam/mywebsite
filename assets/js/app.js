@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-01-16
+ * 2015-02-01
  */
 (function() {
   var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,

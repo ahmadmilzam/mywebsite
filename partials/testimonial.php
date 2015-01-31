@@ -74,6 +74,23 @@
         </footer>
       </blockquote>
 
+      <blockquote class="blockquote">
+        <h3 class="blockquote__header">
+          Colleague
+        </h3>
+        <p class="blockquote__body">
+          A creative co-wokers, have a bunch of ideas, very good reader,
+          always update his website knowledge trend,
+          a little bit spoiled, SOP-man and maybe a good friend to have.
+          Cheers!
+        </p>
+        <footer class="blockquote__footer">
+          <cite>
+            <a href="https://www.linkedin.com/profile/view?id=258822533">Yuno Lastyanto</a>, Art Director, PT. Docotel Teknologi
+          </cite>
+        </footer>
+      </blockquote>
+
     </div>
     <div class="layout__unit small-1 medium-2-5">
       <a href="#contact" class="btn btn--large btn--full" data-scroll>

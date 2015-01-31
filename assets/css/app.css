@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-01-16
+ * 2015-02-01
  */
 
 @charset "UTF-8";
@@ -333,6 +333,9 @@
    ========================================================================== */
 /*
    Horizontal Middle
+   ========================================================================== */
+/*
+   VH middle
    ========================================================================== */
 /*
    Border Radius
@@ -804,14 +807,10 @@ ins {
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1170,8 +1169,6 @@ input[type="month"],
 input[type="time"],
 input[type="week"],
 select {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 0.75rem;
@@ -1681,7 +1678,8 @@ input[type="file"] {
   padding: 0;
   list-style: none;
 }
-.list-inline > li {
+
+.list-inline__item {
   display: inline-block;
 }
 
@@ -1907,7 +1905,6 @@ input[type="file"] {
 }
 
 .feedback {
-  margin-top: 12px;
   color: #03C9A9;
   font-weight: bold;
 }
@@ -2836,15 +2833,15 @@ html, body {
 /* ==========================================================================
    Text Transform Helper Classes
    ========================================================================== */
-.uppercase {
+.text-uppercase {
   text-transform: uppercase;
 }
 
-.lowercase {
+.text-lowercase {
   text-transform: lowercase;
 }
 
-.capitalize {
+.text-capitalize {
   text-transform: capitalize;
 }
 
