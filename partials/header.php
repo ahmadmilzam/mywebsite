@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="assets/css/app<?php echo ENVIRONMENT == 'development' ? '.css' : '.min.css' ?>" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="author" href="https://plus.google.com/116499314183216878484">
   <link rel="alternate" href="http://ahmadmilzam.com" hreflang="en-ID">
 
   <meta name="description" content="Online Portfolio of Ahmad Milzam, a Frontend Web Architect and Web Developer living in Jakarta, Indonesia">
