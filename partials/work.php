@@ -23,16 +23,16 @@
         <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
-            <li>
+            <li class="list-inline__item">
               <span class="badge">HTML5</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">CSS3</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">SCSS</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">jQuery</span>
             </li>
           </ul>
@@ -64,19 +64,19 @@
         <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
-            <li>
+            <li class="list-inline__item">
               <span class="badge">HTML5</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">CSS3</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">SCSS</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">jQuery</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">Google Map API V3</span>
             </li>
           </ul>
@@ -108,16 +108,16 @@
         <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
-            <li>
+            <li class="list-inline__item">
               <span class="badge">HTML5</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">CSS3</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">SCSS</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">jQuery</span>
             </li>
           </ul>
@@ -149,16 +149,16 @@
         <div class="layout__unit small-1 medium-2-5">
           <h4 class="mb--">Uses in this project:</h4>
           <ul class="list-inline mb-">
-            <li>
+            <li class="list-inline__item">
               <span class="badge">HTML5</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">CSS3</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">SCSS</span>
             </li>
-            <li>
+            <li class="list-inline__item">
               <span class="badge">jQuery</span>
             </li>
           </ul>
