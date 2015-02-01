@@ -1,16 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="author" href="https://plus.google.com/116499314183216878484">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-  <link rel="stylesheet" href="assets/css/app<?php echo ENVIRONMENT == 'development' ? '.css' : '.min.css' ?>" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="author" content="Ahmad Milzam">
+  <title>Frontend Web Architect and Web Developer | Jakarta Indonesia</title>
   <meta name="description" content="Online Portfolio of Ahmad Milzam, a Frontend Web Architect and Web Developer living in Jakarta, Indonesia">
-
   <meta property="og:title" content="Online Portfolio of Ahmad Milzam">
   <meta property="og:url" content="http://ahmadmilzam.com">
   <meta property="og:image" content="http://ahmadmilzam.com/assets/img/cover.jpg">
@@ -25,7 +19,10 @@
   <meta name="twitter:description" content="Ahmad Milzam, a Frontend Web Architect and Web Developer living in Jakarta, Indonesia. Specialise in writing, architecting and scaling CSS for big websites in big teams. With a strong focus on performance.">
   <meta name="twitter:image:src" content="http://ahmadmilzam.com/assets/img/cover.jpg">
 
-  <title>Frontend Web Architect and Web Developer | Jakarta Indonesia</title>
+  <link rel="stylesheet" href="assets/css/app<?php echo ENVIRONMENT == 'development' ? '.css' : '.min.css' ?>" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="author" href="https://plus.google.com/116499314183216878484">
+  <link rel="alternate" href="http://ahmadmilzam.com" hreflang="en-ID">
 </head>
 <!--
   ___ ___ _____ ___    ___     ______  ___
