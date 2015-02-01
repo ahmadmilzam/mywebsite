@@ -265,10 +265,10 @@ $anchor-font-color: $color-primary;
 
 
 /*
-   Modules
+   Objects
    ========================================================================== */
 /**
- * modules, abstractions, and design patterns
+ * objects, abstractions, and design patterns
  * (e.g. .media {}, .button{}, .list{}).
  *
  * [1]  Grids
@@ -323,7 +323,7 @@ $enable-grid-centered:                  true;
 // $enable-grid-uncentered:                true;
 
 
-@import "4-modules/modules.grids";
+@import "4-objects/objects.grids";
 
 
 /* [2] */
@@ -344,7 +344,7 @@ $enable-grid-centered:                  true;
 // $enable-block--right:                true;
 
 
-// @import "4-modules/modules.block";
+// @import "4-objects/objects.block";
 
 
 /* [3] */
@@ -363,7 +363,7 @@ $enable-grid-centered:                  true;
 // $enable-box--huge:                   true;
 
 
-// @import "4-modules/modules.box";
+// @import "4-objects/objects.box";
 
 
 /* [4] */
@@ -386,8 +386,8 @@ $enable-btn--full:                   true;
 // $enable-btn--pill:                   true;
 // $enable-btn--disabled:               true;
 
-@import "4-modules/modules.buttons";
-@import "modules.buttons";
+@import "4-objects/objects.buttons";
+@import "objects.buttons";
 
 
 /* [5] */
@@ -410,7 +410,7 @@ $enable-btn--full:                   true;
 // $enable-flag--responsive:            true;
 // $flag-collapse-at:                   upper-bound($small-range);
 
-// @import "4-modules/modules.flag";
+// @import "4-objects/objects.flag";
 
 
 /* [6] */
@@ -427,12 +427,12 @@ $enable-btn--full:                   true;
 // $enable-list-block--large:           true;
 // $enable-list-block--huge:            true;
 
-// @import "4-modules/modules.list-block";
+// @import "4-objects/objects.list-block";
 
 
 /* [7] */
 // $list-dull-namespace:                $namespace;
-// @import "4-modules/modules.list-dull";
+// @import "4-objects/objects.list-dull";
 
 
 /* [8] */
@@ -441,7 +441,7 @@ $enable-btn--full:                   true;
 // $enable-list-inline--delimited:      true;
 // $list-inline-delimit-character:      ",\00A0";
 
-@import "4-modules/modules.list-inline";
+@import "4-objects/objects.list-inline";
 
 /* [9] */
 // $list-ui-namespace:                  $namespace;
@@ -464,7 +464,7 @@ $enable-btn--full:                   true;
 // $enable-remove-border-at-first-item: true;
 // $enable-remove-border-at-last-item:  true;
 
-// @import "4-modules/modules.list-ui";
+// @import "4-objects/objects.list-ui";
 
 
 /* [10] */
@@ -485,7 +485,7 @@ $enable-btn--full:                   true;
 // $enable-media--flush:                true;
 // $enable-media--responsive:           true;
 
-// @import "4-modules/modules.media";
+// @import "4-objects/objects.media";
 
 
 /* [11] */
@@ -506,7 +506,7 @@ $enable-btn--full:                   true;
 // $enable-pack--middle:                true;
 // $enable-pack--bottom:                true;
 
-// @import "4-modules/modules.pack";
+// @import "4-objects/objects.pack";
 
 
 /* [12] */
@@ -528,7 +528,7 @@ $enable-btn--full:                   true;
 // $enable-table--rows:                 true;
 // $enable-table--columns:              true;
 
-// @import "4-modules/modules.tables";
+// @import "4-objects/objects.tables";
 
 
 
