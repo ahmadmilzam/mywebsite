@@ -4,7 +4,8 @@
     <div class="layout__unit small-1">
       <h2 class="h1 text-center mb-">Contact Me</h2>
       <p class="lede text-center">
-        Please contact me if you have an enquiry regarding a new project or would like to discuss any future ones.<br>I am always interested in working with new clients or hearing about exciting opportunities.
+        I'm always interested in working with new clients or hearing about exciting opportunities.<br>
+        Just send me an email and I'll get back to your enquiry ASAP <i class="icon icon--cool"></i>.
       </p>
     </div>
   </div>

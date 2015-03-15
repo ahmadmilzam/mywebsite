@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="layout">
-    <div class="layout__unit small-1 medium-3-5 testimonial-container pos-rel">
+    <div class="layout__unit small-1 medium-3-5 testimonial-container pos-rel small-mb medium-mb0">
 
       <blockquote class="blockquote">
         <h3 class="blockquote__header">

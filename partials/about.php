@@ -11,7 +11,7 @@
                          <960:medium/milzam.png,
                          >960:large/milzam.png"
           alt="Ahmad Milzam">
-          <blockquote class="blockquote mt hide-for-medium-up text-left">
+          <blockquote class="blockquote mt small-mb medium-mb0 hide-for-medium-up text-left">
             <p class="blockquote__body">
               Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!
             </p>
@@ -32,7 +32,7 @@
             <strong>agile</strong>, and <strong>robust development</strong>.
           </p>
 
-          <blockquote class="blockquote show-for-medium-up">
+          <blockquote class="blockquote show-for-large-up">
             <p class="blockquote__body">
               Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!
             </p>
