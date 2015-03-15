@@ -2,14 +2,52 @@
 
   <h2 class="h1 text-center mb">Recent Works</h2>
 
+  <div class="portfolio portfolio--asoris">
+    <div class="portfolio__img text-center">
+      <img data-src-base="assets/img/project/"
+           data-src="<960:medium/asoris.jpg,
+                     >960:large/asoris.jpg"
+           alt="Asoris">
+    </div>
+    <div class="portfolio__desc">
+      <div class="layout pv">
+        <div class="layout__unit small-1 medium-3-5 layout__col layout__col">
+          <h3 class="content-heading">Asoris - Online Marketplace</h3>
+          <p>
+            I was asked to create a HTML template from PSD for a online marketplace.
+            The template must be responsive and works great across all devices.
+          </p>
+        </div>
+        <div class="layout__unit small-1 medium-2-5">
+          <h4 class="mb--">Uses in this project:</h4>
+          <ul class="list-inline mb-">
+            <li class="list-inline__item">
+              <span class="badge">HTML5</span>
+            </li>
+            <li class="list-inline__item">
+              <span class="badge">CSS3</span>
+            </li>
+            <li class="list-inline__item">
+              <span class="badge">SCSS</span>
+            </li>
+            <li class="list-inline__item">
+              <span class="badge">jQuery</span>
+            </li>
+          </ul>
+          <a href="http://demo.ahmadmilzam.com/asoris" title="View Website" class="btn btn--full btn--asoris">
+            View Website <i class="icon icon--paperplane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="portfolio portfolio--muse">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
-           data-src="<480:medium/muse.jpg,
-                     <768:medium/muse.jpg,
-                     <960:medium/muse.jpg,
+           data-src="<960:medium/muse.jpg,
                      >960:large/muse.jpg"
-           alt="Muse Landing Page" class="wow fadeInLeft" data-wow-delay=".1s" data-wow-offset="100">
+           alt="Muse Landing Page">
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">
@@ -47,11 +85,9 @@
   <div class="portfolio portfolio--qualixen">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
-           data-src="<480:medium/qualixen.jpg,
-                     <768:medium/qualixen.jpg,
-                     <960:medium/qualixen.jpg,
+           data-src="<960:medium/qualixen.jpg,
                      >960:large/qualixen.jpg"
-        alt="Qualixen company profile" class="wow fadeInRight" data-wow-delay=".1s" data-wow-offset="100">
+        alt="Qualixen company profile">
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">
@@ -91,11 +127,9 @@
   <div class="portfolio portfolio--anona">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
-           data-src="<480:medium/anona.jpg,
-                     <768:medium/anona.jpg,
-                     <960:medium/anona.jpg,
+           data-src="<960:medium/anona.jpg,
                      >960:large/anona.jpg"
-        alt="Anona online shop template" class="wow fadeInLeft" data-wow-delay=".1s" data-wow-offset="100">
+        alt="Anona online shop template">
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">
@@ -132,11 +166,9 @@
   <div class="portfolio portfolio--cominter">
     <div class="portfolio__img text-center">
       <img data-src-base="assets/img/project/"
-           data-src="<480:medium/cominter.jpg,
-                     <768:medium/cominter.jpg,
-                     <960:medium/cominter.jpg,
+           data-src="<960:medium/cominter.jpg,
                      >960:large/cominter.jpg"
-        alt="Cominter online shop template" class="wow fadeInRight" data-wow-delay=".1s" data-wow-offset="100">
+        alt="Cominter online shop template">
     </div>
     <div class="portfolio__desc">
       <div class="layout pv">

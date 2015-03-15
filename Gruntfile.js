@@ -98,6 +98,26 @@ module.exports = function(grunt) {
     },
 
     /**
+     * Optimize Images.
+     * https://github.com/gruntjs/grunt-contrib-imagemin
+     */
+    imagemin: {                          // Task
+      dynamic: {
+        options: {                       // Target options
+          optimizationLevel: 3,
+          progressive: false,
+          cache: false
+        },
+        files: [{
+          expand: true,                       // Enable dynamic expansion
+          cwd: '<%= project.assets %>/img/',  // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}'],        // Actual patterns to match
+          dest: '<%= project.assets %>/img/'  // Destination path prefix
+        }]
+      }
+    },
+
+    /**
      * Concatenate files.
      * https://github.com/gruntjs/grunt-contrib-concat
      */
@@ -108,7 +128,7 @@ module.exports = function(grunt) {
       target: {
         src: [
           // required library script
-          'src/js/wow.js',
+          //'src/js/wow.js',
           'src/js/smoothscroll.js',
           'src/js/responsive-img.js',
 
@@ -126,7 +146,16 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         mangle: true,
-        compress: true,
+        compress: {
+          sequences: true,
+          dead_code: true,
+          conditionals: true,
+          booleans: true,
+          unused: true,
+          if_return: true,
+          join_vars: true,
+          drop_console: true
+        },
         report: 'gzip'
       },
       target: {
@@ -176,7 +205,8 @@ module.exports = function(grunt) {
     'sass:compile',
     'autoprefixer:dist',
     'cssmin:combine',
-    'uglify:target'
+    'uglify:target',
+    'imagemin:dynamic'
   ]);
 
 }

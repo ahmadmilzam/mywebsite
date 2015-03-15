@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-02-01
+ * 2015-03-15
  */
 
 @charset "UTF-8";
@@ -1021,14 +1021,14 @@ h1, h2, h3, h4, h5, h6 {
    LINKS
    ========================================================================== */
 a {
-  color: #446cb3;
+  color: #2c97de;
   text-decoration: none;
   line-height: inherit;
   -webkit-transition: color 0.3s ease-out 0s;
   transition: color 0.3s ease-out 0s;
 }
 a:hover, a:focus {
-  color: #6789c5;
+  color: #56ace5;
 }
 a img {
   border: none;
@@ -1130,76 +1130,12 @@ blockquote footer:before, blockquote small:before {
 }
 
 /* [9] */
-/* ==========================================================================
-   FORM ELEMENTS
-   ========================================================================== */
-fieldset {
-  padding: 1.5rem;
-}
-
-input,
-label,
-select {
-  display: block;
-}
-
-label {
-  margin-bottom: 0.375rem;
-}
-label.required:after {
-  content: "*";
-}
-label abbr {
-  display: none;
-}
-
-textarea,
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-input[type="color"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-select {
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 0.75rem;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-}
-
-textarea {
-  resize: vertical;
-  height: 6rem;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
-  position: relative;
-  top: 2px;
-}
-
-input[type="file"] {
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.75rem;
-  width: 100%;
-}
-
 /* [10] */
 /*
-   Modules
+   Objects
    ========================================================================== */
 /**
- * modules, abstractions, and design patterns
+ * objects, abstractions, and design patterns
  * (e.g. .media {}, .button{}, .list{}).
  *
  * [1]  Grids
@@ -1214,7 +1150,6 @@ input[type="file"] {
  * [10] Media
  * [11] Pack
  * [12] Table
- * [13] Tabs
  */
 /* [1] */
 /*
@@ -1260,8 +1195,6 @@ input[type="file"] {
   width: auto;
   margin-left: -0.75rem;
   margin-right: -0.75rem;
-  margin-top: 0;
-  margin-bottom: 0;
   max-width: none;
 }
 
@@ -1533,9 +1466,9 @@ input[type="file"] {
  * A simple button object.
  */
 /**
- * Here we set a variable assuming that `box-sizing: border-box;` is not
+ * Here we set a variable assuming that 'box-sizing: border-box;' is not
  * set globally. If it has been previously been defined,
- * the following variable will be overriden and will be set to `true`.
+ * the following variable will be overriden and will be set to 'true'.
  */
 /**
  * 1. Allow us to style box model properties.
@@ -1564,10 +1497,10 @@ input[type="file"] {
   /* [5] */
   padding: 0.6875rem 1.4375rem;
   /* [6] */
-  background-color: #446cb3;
+  background-color: #2c97de;
   border-width: 1px;
   border-style: solid;
-  border-color: #446cb3;
+  border-color: #2c97de;
   border-radius: 3px;
   -webkit-transition: background-color 0.3s ease-out 0s;
   transition: background-color 0.3s ease-out 0s;
@@ -1578,10 +1511,12 @@ input[type="file"] {
   color: #f9f9f9;
 }
 .btn:hover, .btn:focus {
-  background-color: #5d81c1;
+  border-color: #41a1e1;
+  background-color: #41a1e1;
 }
 .btn:active {
-  background-color: #3a5c98;
+  border-color: #41a1e1;
+  background-color: #2089cf;
 }
 
 /**
@@ -1596,8 +1531,9 @@ input[type="file"] {
  * Large buttons.
  */
 .btn--large {
+  font-size: 1.25rem;
   padding: 1.4375rem 2.9375rem;
-  /* [7] */
+  /* [6] */
 }
 
 /**
@@ -1614,10 +1550,12 @@ input[type="file"] {
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--muse:hover, .btn--muse:focus {
-  background-color: #f63b84;
+  background-color: #f52374;
+  border-color: #f52374;
 }
 .btn--muse:active {
-  background-color: #92073d;
+  background-color: #aa0847;
+  border-color: #aa0847;
 }
 
 .btn--cominter {
@@ -1627,10 +1565,12 @@ input[type="file"] {
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--cominter:hover, .btn--cominter:focus {
-  background-color: #1dfcd8;
+  background-color: #04fbd3;
+  border-color: #04fbd3;
 }
 .btn--cominter:active {
-  background-color: #027e6a;
+  background-color: #02977f;
+  border-color: #02977f;
 }
 
 .btn--anona {
@@ -1640,10 +1580,12 @@ input[type="file"] {
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--anona:hover, .btn--anona:focus {
-  background-color: #d4dada;
+  background-color: #c6cfcf;
+  border-color: #c6cfcf;
 }
 .btn--anona:active {
-  background-color: #829494;
+  background-color: #909f9f;
+  border-color: #909f9f;
 }
 
 .btn--qualixen {
@@ -1653,10 +1595,27 @@ input[type="file"] {
   transition: background-color 0.3s ease-out 0s;
 }
 .btn--qualixen:hover, .btn--qualixen:focus {
-  background-color: #476481;
+  background-color: #3e5771;
+  border-color: #3e5771;
 }
 .btn--qualixen:active {
-  background-color: #11181f;
+  background-color: #1a242f;
+  border-color: #1a242f;
+}
+
+.btn--asoris {
+  background-color: #4cc2ed;
+  border-color: #35BAEB;
+  -webkit-transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0.3s ease-out 0s;
+}
+.btn--asoris:hover, .btn--asoris:focus {
+  background-color: #63caf0;
+  border-color: #63caf0;
+}
+.btn--asoris:active {
+  background-color: #15a3d8;
+  border-color: #15a3d8;
 }
 
 .btn--large {
@@ -1687,7 +1646,6 @@ input[type="file"] {
 /* [10] */
 /* [11] */
 /* [12] */
-/* [13] */
 /*
    COMPONENTS
    ========================================================================== */
@@ -1893,6 +1851,133 @@ input[type="file"] {
   line-height: 1;
 }
 
+/* ==========================================================================
+   FORM ELEMENTS
+   ========================================================================== */
+fieldset {
+  padding: 24px;
+}
+
+input,
+label,
+select {
+  display: block;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.0625rem;
+}
+label.required:after {
+  content: "*";
+  color: #DB0A5B;
+}
+label abbr {
+  display: none;
+}
+
+textarea,
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.875rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #dddddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-transition: border-color 0.3s ease-out 0s;
+  transition: border-color 0.3s ease-out 0s;
+}
+textarea:hover, textarea:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus,
+input[type="search"]:hover,
+input[type="search"]:focus,
+input[type="tel"]:hover,
+input[type="tel"]:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
+input[type="date"]:hover,
+input[type="date"]:focus,
+input[type="datetime"]:hover,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:hover,
+input[type="datetime-local"]:focus,
+input[type="month"]:hover,
+input[type="month"]:focus,
+input[type="time"]:hover,
+input[type="time"]:focus,
+input[type="week"]:hover,
+input[type="week"]:focus,
+select:hover,
+select:focus {
+  border-color: #bbbbbb;
+}
+textarea:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+select:focus {
+  outline: none;
+}
+textarea.border-less,
+input[type="email"].border-less,
+input[type="password"].border-less,
+input[type="search"].border-less,
+input[type="tel"].border-less,
+input[type="text"].border-less,
+input[type="url"].border-less,
+input[type="date"].border-less,
+input[type="datetime"].border-less,
+input[type="datetime-local"].border-less,
+input[type="month"].border-less,
+input[type="time"].border-less,
+input[type="week"].border-less,
+select.border-less {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 7rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  top: 2px;
+}
+
 /**
 *
 * Spam filter
@@ -1981,7 +2066,7 @@ html, body {
   display: table;
   height: 100%;
   width: 100%;
-  background-color: #446CB3;
+  background-color: #2c97de;
   color: #f9f9f9;
 }
 .layout-header .headline {
@@ -2049,6 +2134,10 @@ html, body {
   background-color: #d60a59;
 }
 
+.portfolio--asoris .portfolio__desc {
+  background-color: #2eb8ea;
+}
+
 /*
    HELPERS
    ========================================================================== */
@@ -2071,19 +2160,19 @@ html, body {
    Text Alignment
    ========================================================================== */
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 
 .text-justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 
 /* ==========================================================================
@@ -2921,11 +3010,11 @@ html, body {
 
 .bg-primary,
 .layout-footer {
-  background-color: #446cb3;
+  background-color: #2c97de;
 }
 
 .bg-grey {
-  background-color: #f0f0f0;
+  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,6 +1,6 @@
 {
   "name": "foundation-libsass-template",
   "dependencies": {
-    "csskit": "*"
+    "csskit": "1.0-beta"
   }
 }

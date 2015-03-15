@@ -1,6 +1,6 @@
 <div class="pv+ bg-grey" id="profile">
 
-  <div class="layout pos-rel wow fadeInUp">
+  <div class="layout pos-rel">
     <div class="layout__unit small-1 medium-3-5 small-mb medium-mb0">
       <p class="lede small-text-justify medium-text-left mb0">
         I'm currently considering new

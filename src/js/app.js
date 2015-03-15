@@ -99,11 +99,6 @@ var App = (function(){
   return {
     init: function(){
 
-      var wow = new WOW({
-        mobile: false // trigger animations on mobile devices (true is default)
-      });
-      wow.init();
-
       smoothScroll.init({
         speed: 1000, // Integer. How fast to complete the scroll in milliseconds
         easing: 'easeInOutCubic', // Easing pattern to use

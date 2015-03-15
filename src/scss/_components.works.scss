@@ -37,3 +37,9 @@
     background-color: scale-color($color-alert, $lightness: -2.5%);
   }
 }
+
+.portfolio--asoris{
+  .portfolio__desc{
+    background-color: scale-color($color-asoris, $lightness: -2.5%);
+  }
+}

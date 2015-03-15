@@ -246,7 +246,7 @@ $anchor-font-color: $color-primary;
 // $form-input-padding:                    halve($base-spacing-unit);
 // $form-input-margin-bottom:              halve($base-spacing-unit);
 
-@import "3-base/base.forms";
+// @import "3-base/base.forms";
 
 
 /* [10] */
@@ -378,7 +378,7 @@ $btn-color:                          $color-white;
 // $btn-border-style:                   solid;
 // $btn-border-color:                   $btn-background;
 $btn-radius:                         $base-radius;
-$btn-lightness-factor:               15%;
+$btn-lightness-factor:               10%;
 
 // $enable-btn--small:                  true;
 $enable-btn--large:                  true;

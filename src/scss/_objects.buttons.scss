@@ -18,9 +18,15 @@ $dark-text-color: $base-text-color;
   &:hover,
   &:focus{
     background-color: lighten($color-alert, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: lighten($color-alert, $btn-lightness-factor);
+    }
   }
   &:active{
     background-color: darken($color-alert, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: darken($color-alert, $btn-lightness-factor);
+    }
   }
 
 }
@@ -38,9 +44,15 @@ $dark-text-color: $base-text-color;
   &:hover,
   &:focus{
     background-color: lighten($color-success, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: lighten($color-success, $btn-lightness-factor);
+    }
   }
   &:active{
     background-color: darken($color-success, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: darken($color-success, $btn-lightness-factor);
+    }
   }
 
 }
@@ -58,9 +70,15 @@ $dark-text-color: $base-text-color;
   &:hover,
   &:focus{
     background-color: lighten($color-secondary, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: lighten($color-secondary, $btn-lightness-factor);
+    }
   }
   &:active{
     background-color: darken($color-secondary, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: darken($color-secondary, $btn-lightness-factor);
+    }
   }
 
 }
@@ -78,9 +96,41 @@ $dark-text-color: $base-text-color;
   &:hover,
   &:focus{
     background-color: lighten($color-qualixen, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: lighten($color-qualixen, $btn-lightness-factor);
+    }
   }
   &:active{
     background-color: darken($color-qualixen, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: darken($color-qualixen, $btn-lightness-factor);
+    }
+  }
+
+}
+
+.btn--asoris{
+
+  background-color: lighten($color-asoris, 5%);
+
+  @if($btn-border-width != 0) {
+    border-color: $color-asoris;
+  }
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus{
+    background-color: lighten($color-asoris, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: lighten($color-asoris, $btn-lightness-factor);
+    }
+  }
+  &:active{
+    background-color: darken($color-asoris, $btn-lightness-factor);
+    @if($btn-border-width != 0) {
+      border-color: darken($color-asoris, $btn-lightness-factor);
+    }
   }
 
 }
