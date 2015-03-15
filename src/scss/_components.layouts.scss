@@ -66,19 +66,10 @@ html, body {
 }
 
 
-// .valign-middle {
-//   display: table;
-//   table-layout: fixed;
-//   height: 100%;
-//   width: 100%;
+/*
+   Remove every margin bottom for everty last element inside layout unit
+   ========================================================================== */
+.layout__unit > :last-child{
+  margin-bottom: 0;
+}
 
-//   .columns{
-//     display: table-cell;
-//     table-layout: fixed;
-//     vertical-align: middle;
-//   }
-
-//   .columns{
-//     float: none;
-//   }
-// }

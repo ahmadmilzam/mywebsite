@@ -1,12 +1,11 @@
-<div class="pv+ bg-grey" id="contact">
+<div class="pv+ bg-gray" id="contact">
 
-  <div class="layout">
-    <div class="layout__unit">
-      <h2 class="h1 text-center mb">Contact Me</h2>
-      <p class="text-center">
-        Please contact me if you have an enquiry regarding a new project or would like to discuss any future ones. I am always interested in working with new clients or hearing about exciting opportunities.
+  <div class="layout mb+">
+    <div class="layout__unit small-1">
+      <h2 class="h1 text-center mb-">Contact Me</h2>
+      <p class="lede text-center">
+        Please contact me if you have an enquiry regarding a new project or would like to discuss any future ones.<br>I am always interested in working with new clients or hearing about exciting opportunities.
       </p>
-      <br>
     </div>
   </div>
 
@@ -21,10 +20,10 @@
         <br>
         E: ahmadmilzam[at]yahoo[dot]com
       </p>
-      <ul class="list-inline">
-        <li class="list-inline__item mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon--facebook icon-lg"></i></a></li>
-        <li class="list-inline__item mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><i class="icon icon--twitter icon-lg"></i></a></li>
-        <li class="list-inline__item mr-"><a href="https://plus.google.com/+AhmadMilzam-freelance-web-developer/posts" title="Me on Google Plus"><i class="icon icon--googleplus icon-lg"></i></a></li>
+      <ul class="list-inline mt">
+        <li class="list-inline__item mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon--facebook"></i></a></li>
+        <li class="list-inline__item mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><i class="icon icon--twitter"></i></a></li>
+        <li class="list-inline__item mr-"><a href="https://plus.google.com/+AhmadMilzam-freelance-web-developer/posts" title="Me on Google Plus"><i class="icon icon--google-plus"></i></a></li>
         <li class="list-inline__item"><a href="https://www.linkedin.com/in/ahmadmilzam" title="Me on Linkedin"><i class="icon icon--linkedin"></i></a></li>
       </ul>
     </div>

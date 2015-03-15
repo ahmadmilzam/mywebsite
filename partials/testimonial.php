@@ -1,8 +1,12 @@
 <div class="pv+">
-  <h2 class="h1 text-center mb">Testimonials</h2>
-  <p class="text-center">
-    I've been lucky enough to work with some really great people over the years, and some of them have said some really nice things about me:
-  </p>
+  <div class="layout">
+    <div class="layout__unit small-1 mb+">
+      <h2 class="h1 text-center mb-">Testimonials</h2>
+      <p class="lede text-center">
+        I've been lucky enough to work with some really great people over the years,<br>and some of them have said some really nice things about me:
+      </p>
+    </div>
+  </div>
   <div class="layout">
     <div class="layout__unit small-1 medium-3-5 testimonial-container pos-rel">
 

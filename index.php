@@ -28,6 +28,10 @@
 <?php require_once 'partials/about.php'; ?>
 <!-- /Profile Section -->
 
+<!-- Service Section -->
+<?php require_once 'partials/service.php'; ?>
+<!-- /Service Section -->
+
 <!-- Recent work section -->
 <?php require_once 'partials/work.php'; ?>
 <!-- Recent work section -->

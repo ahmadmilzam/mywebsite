@@ -1,10 +1,10 @@
-<div class="pt+ bg-grey" id="work">
+<div class="pt+" id="work">
 
-  <h2 class="h1 text-center mb">Recent Works</h2>
+  <h2 class="h1 text-center mb+">Recent Works</h2>
 
   <div class="portfolio portfolio--asoris">
     <div class="portfolio__img text-center">
-      <img data-src-base="assets/img/project/"
+      <img src="assets/img/blank.png" data-src-base="assets/img/project/"
            data-src="<960:medium/asoris.jpg,
                      >960:large/asoris.jpg"
            alt="Asoris">
@@ -35,7 +35,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/asoris" title="View Website" class="btn btn--full btn--asoris">
-            View Website <i class="icon icon--paperplane"></i>
+            View Website <i class="icon icon--paper-plane"></i>
           </a>
         </div>
       </div>
@@ -44,7 +44,7 @@
 
   <div class="portfolio portfolio--muse">
     <div class="portfolio__img text-center">
-      <img data-src-base="assets/img/project/"
+      <img src="assets/img/blank.png" data-src-base="assets/img/project/"
            data-src="<960:medium/muse.jpg,
                      >960:large/muse.jpg"
            alt="Muse Landing Page">
@@ -75,7 +75,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/muse" title="View Website" class="btn btn--full btn--muse">
-            View Website <i class="icon icon--paperplane"></i>
+            View Website <i class="icon icon--paper-plane"></i>
           </a>
         </div>
       </div>
@@ -84,7 +84,7 @@
 
   <div class="portfolio portfolio--qualixen">
     <div class="portfolio__img text-center">
-      <img data-src-base="assets/img/project/"
+      <img src="assets/img/blank.png" data-src-base="assets/img/project/"
            data-src="<960:medium/qualixen.jpg,
                      >960:large/qualixen.jpg"
         alt="Qualixen company profile">
@@ -117,7 +117,7 @@
             </li>
           </ul>
           <a href="http://qualixen.com" title="View Website" class="btn btn--full btn--qualixen">
-            View Website <i class="icon icon--paperplane"></i>
+            View Website <i class="icon icon--paper-plane"></i>
           </a>
         </div>
       </div>
@@ -126,7 +126,7 @@
 
   <div class="portfolio portfolio--anona">
     <div class="portfolio__img text-center">
-      <img data-src-base="assets/img/project/"
+      <img src="assets/img/blank.png" data-src-base="assets/img/project/"
            data-src="<960:medium/anona.jpg,
                      >960:large/anona.jpg"
         alt="Anona online shop template">
@@ -156,7 +156,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/anona" title="View Website" class="btn btn--full btn--anona">
-            View Website <i class="icon icon--paperplane"></i>
+            View Website <i class="icon icon--paper-plane"></i>
           </a>
         </div>
       </div>
@@ -165,7 +165,7 @@
 
   <div class="portfolio portfolio--cominter">
     <div class="portfolio__img text-center">
-      <img data-src-base="assets/img/project/"
+      <img src="assets/img/blank.png" data-src-base="assets/img/project/"
            data-src="<960:medium/cominter.jpg,
                      >960:large/cominter.jpg"
         alt="Cominter online shop template">
@@ -195,7 +195,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/cominter" title="View Website" class="btn btn--full btn--cominter">
-            View Website <i class="icon icon--paperplane"></i>
+            View Website <i class="icon icon--paper-plane"></i>
           </a>
         </div>
       </div>

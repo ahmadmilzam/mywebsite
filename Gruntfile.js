@@ -190,11 +190,12 @@ module.exports = function(grunt) {
    * Default task
    * Run `grunt` on the command line
    */
-  grunt.registerTask('default', [
+  grunt.registerTask('base', [
     'sass:compile',
-    'concat:target',
-    'watch'
+    'concat:target'
   ]);
+
+  grunt.registerTask('default', ['base', 'watch']);
 
   /**
    * Build task
@@ -202,7 +203,7 @@ module.exports = function(grunt) {
    * Then compress all JS/CSS files
    */
   grunt.registerTask('build', [
-    'sass:compile',
+    'base',
     'autoprefixer:dist',
     'cssmin:combine',
     'uglify:target',
