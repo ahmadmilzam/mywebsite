@@ -31,13 +31,12 @@
 
     <form class="layout__unit small-1 medium-2-3" action="send_email.php" name="contactForm" id="contactForm" method="post" data-abide="ajax" autocomplete="off">
 
-      <div class="layout">
+      <div class="layout mb-">
         <div class="layout__unit small-1 medium-1-2">
           <label for="name">
             <small>Name</small>
           </label>
           <input class="radius" id="name" type="text" name="name" placeholder="My name is*" required>
-          <input class="radius first-name" id="firstname" type="email" name="first_name" placeholder="Your first name">
         </div>
         <div class="layout__unit small-1 medium-1-2">
           <label for="email">
@@ -46,21 +45,21 @@
           <input class="radius" id="email" type="email" name="email" placeholder="your.email@something.com*" required>
         </div>
       </div>
-      <div class="layout">
-        <div class="layout__unit small-1">
+      <div class="layout mb-">
+        <div class="layout__unit small-1 medium-1-2">
           <label for="phonenumber">
             <small>Phone number</small>
           </label>
           <input class="radius" id="phonenumber" type="tel" name="phone" placeholder="0899999999*" required pattern="[0-9]+">
         </div>
-        <div class="layout__unit small-1">
+        <div class="layout__unit small-1 medium-1-2">
           <label for="website-url">
             <small>Website Url</small>
           </label>
           <input class="radius" id="website-url" type="url" name="website" placeholder="http://your-current-website.com">
         </div>
       </div>
-      <div class="layout">
+      <div class="layout mb-">
         <div class="layout__unit small-1">
           <label for="message">
             <small>Project detail</small>
@@ -70,6 +69,7 @@
       </div>
       <div class="layout mb">
         <div class="layout__unit small-1">
+          <input class="radius first-name" id="firstname" type="email" name="first_name" placeholder="Your first name">
           <button class="btn btn--large btn--full" id="buttonSubmit" type="submit" data-loading="Please wait..">SEND</button>
         </div>
       </div>
