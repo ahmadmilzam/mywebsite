@@ -28,7 +28,7 @@
               <h3 class="mb-">Development</h3>
               <p>
                 I build websites. I mostly do frontend development (HTML5, CSS3, Javascript)
-                but many times I get my hands dirty with some backend (php, MySQL).
+                but many times I get my hands dirty with some backend (PHP, MySQL).
               </p>
             </div>
           </div>
