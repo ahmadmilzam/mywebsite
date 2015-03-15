@@ -14,7 +14,7 @@
         <div class="layout__unit small-1 medium-3-5 layout__col layout__col">
           <h3 class="content-heading">Asoris - Online Marketplace</h3>
           <p>
-            I was asked to create a HTML template from PSD for a online marketplace.
+            I was asked to create a HTML template from PSD for an online marketplace.
             The template must be responsive and works great across all devices.
           </p>
         </div>
