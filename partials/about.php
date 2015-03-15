@@ -2,15 +2,14 @@
   <h2 class="h1 text-center mb">Profile</h2>
   <div class="layout">
 
-    <div class="layout__unit small-1 medium-1-2 text-center pos-rel">
+    <div class="layout__unit small-1 medium-1-2 text-center">
       <img data-src-base="assets/img/layout/"
            data-src="<480:small/milzam.png,
                      <768:medium/milzam.png,
                      <960:medium/milzam.png,
                      >960:large/milzam.png"
       alt="Ahmad Milzam">
-      <br>
-      <blockquote class="blockquote hide-for-medium-up">
+      <blockquote class="blockquote mt hide-for-medium-up text-left">
         <p class="blockquote__body">
           Great team partner in web development, on time delivery, 24H service, high-mobility guy, highly recommended!
         </p>
@@ -22,7 +21,7 @@
       </blockquote>
     </div>
 
-    <div class="layout__unit small-1 medium-1-2 pos-rel wow fadeInRight" data-wow-delay=".15s" data-wow-offset="150">
+    <div class="layout__unit small-1 medium-1-2">
       <p class="text-justify">
         My name is Ahmad Milzam, living in Jakarta, Indonesia.
         I specialise in writing, <strong>architecting</strong> and
