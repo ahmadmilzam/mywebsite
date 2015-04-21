@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     sass: {
       compile:{
         options: {
-          loadPath: 'libs/csskit/src/scss/',
+          loadPath: 'libs/csskit/<%= project.src%>/scss/',
           banner: '<%= tag.banner %>',
           style: 'expanded'
         },
@@ -128,14 +128,15 @@ module.exports = function(grunt) {
       target: {
         src: [
           // required library script
-          //'src/js/wow.js',
-          'src/js/smoothscroll.js',
-          'src/js/responsive-img.js',
+          //'<%= project.src%>/js/wow.js',
+          //'<%= project.src%>/js/loadCSS.js',
+          '<%= project.src%>/js/smoothscroll.js',
+          '<%= project.src%>/js/responsive-img.js',
 
           // my script
-          'src/js/app.js'
+          '<%= project.src%>/js/app.js'
         ],
-        dest: 'assets/js/app.js'
+        dest: '<%= project.assets %>/js/app.js'
       }
     },
 
@@ -160,7 +161,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'assets/js/app.min.js':['assets/js/app.js']
+          '<%= project.assets %>/js/app.min.js':['<%= project.assets %>/js/app.js']
         }
       }
     },
@@ -173,13 +174,19 @@ module.exports = function(grunt) {
     watch: {
       grunt: {
         files: ['Gruntfile.js'],
-        tasks: ['sass:compile']
+        tasks: ['sass:compile', 'concat:target']
       },
       sass: {
         files: [
           '<%= project.src %>/scss/**/*.{scss, sass}'
         ],
         tasks: ['sass:compile']
+      },
+      js: {
+        files: [
+          '<%= project.src %>/ja/**/*.js'
+        ],
+        task: ['concat:target']
       }
     }
 

@@ -22,6 +22,9 @@ html, body {
   background-color: $color-primary;
   color: $color-white;
 
+  @media #{$large-up}{
+    background-attachment: fixed;
+  }
   .headline{
     line-height: 1.2;
     @media #{$large-up}{

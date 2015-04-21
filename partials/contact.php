@@ -5,7 +5,7 @@
       <h2 class="h1 text-center mb-">Contact Me</h2>
       <p class="lede text-center">
         I'm always interested in working with new clients or hearing about exciting opportunities.<br>
-        Just send me an email and I'll get back to your enquiry ASAP <i class="icon icon--cool"></i>.
+        Just send me an email and I'll get back to your enquiry ASAP <svg class="icon icon--cool"><use xlink:href="#icon--cool"></use></svg>.
       </p>
     </div>
   </div>
@@ -22,10 +22,10 @@
         E: ahmadmilzam[at]yahoo[dot]com
       </p>
       <ul class="list-inline mt">
-        <li class="list-inline__item mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><i class="icon icon--facebook"></i></a></li>
-        <li class="list-inline__item mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><i class="icon icon--twitter"></i></a></li>
-        <li class="list-inline__item mr-"><a href="https://plus.google.com/+AhmadMilzam-freelance-web-developer/posts" title="Me on Google Plus"><i class="icon icon--google-plus"></i></a></li>
-        <li class="list-inline__item"><a href="https://www.linkedin.com/in/ahmadmilzam" title="Me on Linkedin"><i class="icon icon--linkedin"></i></a></li>
+        <li class="list-inline__item mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><svg class="icon icon--facebook"><use xlink:href="#icon--facebook"></use></svg></a></li>
+        <li class="list-inline__item mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><svg class="icon icon--twitter"><use xlink:href="#icon--twitter"></use></svg></a></li>
+        <li class="list-inline__item mr-"><a href="https://plus.google.com/+AhmadMilzam-freelance-web-developer/posts" title="Me on Google Plus"><svg class="icon icon--google-plus"><use xlink:href="#icon--google-plus"></use></svg></i></a></li>
+        <li class="list-inline__item"><a href="https://www.linkedin.com/in/ahmadmilzam" title="Me on Linkedin"><svg class="icon icon--linkedin"><use xlink:href="#icon--linkedin"></use></svg></a></li>
       </ul>
     </div>
 

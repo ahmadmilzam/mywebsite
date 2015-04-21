@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-03-16
+ * 2015-04-21
  */
 
 @charset "UTF-8";
@@ -878,7 +878,7 @@ ul, ol, dd {
  *    render text using sub-pixel anti-aliasing.
  */
 html {
-  font-family: "proxima_nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 1em;
   /* [1] */
@@ -1928,72 +1928,33 @@ input[type="radio"] {
   color: #DB0A5B;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("../icons/icomoon.eot?-c0nr2u");
-  src: url("../icons/icomoon.eot?#iefix-c0nr2u") format("embedded-opentype"), url("../icons/icomoon.woff?-c0nr2u") format("woff"), url("../icons/icomoon.ttf?-c0nr2u") format("truetype"), url("../icons/icomoon.svg?-c0nr2u#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+/* SVG ICONS */
 .icon {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
 }
 
-.icon--arrow-down:before {
-  content: "\e600";
+.svg .svg-fallback {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
-.icon--heart:before {
-  content: "\e601";
+.icon--2x {
+  width: 2rem;
+  height: 2rem;
 }
 
-.icon--home:before {
-  content: "\e605";
-}
-
-.icon--paper-plane:before {
-  content: "\e606";
-}
-
-.icon--cool:before {
-  content: "\e9eb";
-}
-
-.icon--google-plus:before {
-  content: "\ea88";
-}
-
-.icon--facebook:before {
-  content: "\ea8c";
-}
-
-.icon--twitter:before {
-  content: "\ea91";
-}
-
-.icon--linkedin:before {
-  content: "\eac9";
-}
-
-.icon--direction:before {
-  content: "\e602";
-}
-
-.icon--tools:before {
-  content: "\e603";
-}
-
-.icon--ruler:before {
-  content: "\e604";
+.icon--3x {
+  width: 3rem;
+  height: 3rem;
 }
 
 /* ==========================================================================
@@ -2015,6 +1976,11 @@ html, body {
   width: 100%;
   background-color: #2c97de;
   color: #f9f9f9;
+}
+@media only screen and (min-width: 64em) {
+  .layout-header {
+    background-attachment: fixed;
+  }
 }
 .layout-header .headline {
   line-height: 1.2;

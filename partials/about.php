@@ -1,4 +1,4 @@
-<div class="pv+ oh">
+<div class="pv+">
   <div class="layout">
     <div class="layout__unit small-1">
       <h2 class="h1 text-center mb+">Who Am I</h2>

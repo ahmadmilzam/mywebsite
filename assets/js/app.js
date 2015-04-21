@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-03-16
+ * 2015-04-21
  */
 (function (root, factory) {
   if ( typeof define === 'function' && define.amd ) {
@@ -675,14 +675,21 @@ var App = (function(){
   return {
     init: function(){
 
+      // SVG feature detection
+      var supports = !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
+      if ( supports ) { // If SVG is supported, add `.svg` class to <html> element
+        document.documentElement.className += (document.documentElement.className ? ' ' : '') + 'svg';
+      }
+
+      // Smoothscrol for link
       smoothScroll.init({
         speed: 1000, // Integer. How fast to complete the scroll in milliseconds
         easing: 'easeInOutCubic', // Easing pattern to use
         updateURL: false
       });
 
+      // contact us handler
       formHandler();
-
     }
   }
 }());

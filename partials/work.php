@@ -1,6 +1,6 @@
 <div class="pt+" id="work">
 
-  <h2 class="h1 text-center mb+">Recent Works</h2>
+  <h2 class="h1 text-center mb+">Some Of My Work</h2>
 
   <div class="portfolio portfolio--asoris">
     <div class="portfolio__img text-center">
@@ -35,7 +35,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/asoris" title="View Website" class="btn btn--full btn--asoris">
-            View Website <i class="icon icon--paper-plane"></i>
+            View Website <svg class="icon icon--paper-plane"><use xlink:href="#icon--paper-plane"></use></svg>
           </a>
         </div>
       </div>
@@ -75,7 +75,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/muse" title="View Website" class="btn btn--full btn--muse">
-            View Website <i class="icon icon--paper-plane"></i>
+            View Website <svg class="icon icon--paper-plane"><use xlink:href="#icon--paper-plane"></use></svg>
           </a>
         </div>
       </div>
@@ -117,7 +117,7 @@
             </li>
           </ul>
           <a href="http://qualixen.com" title="View Website" class="btn btn--full btn--qualixen">
-            View Website <i class="icon icon--paper-plane"></i>
+            View Website <svg class="icon icon--paper-plane"><use xlink:href="#icon--paper-plane"></use></svg>
           </a>
         </div>
       </div>
@@ -156,7 +156,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/anona" title="View Website" class="btn btn--full btn--anona">
-            View Website <i class="icon icon--paper-plane"></i>
+            View Website <svg class="icon icon--paper-plane"><use xlink:href="#icon--paper-plane"></use></svg>
           </a>
         </div>
       </div>
@@ -195,7 +195,7 @@
             </li>
           </ul>
           <a href="http://demo.ahmadmilzam.com/cominter" title="View Website" class="btn btn--full btn--cominter">
-            View Website <i class="icon icon--paper-plane"></i>
+            View Website <svg class="icon icon--paper-plane"><use xlink:href="#icon--paper-plane"></use></svg>
           </a>
         </div>
       </div>

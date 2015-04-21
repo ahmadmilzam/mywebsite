@@ -6,7 +6,7 @@
         <div class="layout__unit small-1 small-mb medium-1-2 large-1-3">
           <div class="media">
             <div class="media__img">
-              <i class="icon icon--direction text-3x text-disabled"></i>
+              <svg class="icon icon--direction icon--3x text-disabled"><use xlink:href="#icon--direction"></use></svg>
             </div>
             <div class="media__body">
               <h3 class="text-primary mb-">Consultancy</h3>
@@ -22,13 +22,12 @@
         <div class="layout__unit small-1 small-mb medium-1-2 large-1-3">
           <div class="media">
             <div class="media__img">
-              <i class="icon icon--tools text-3x text-disabled"></i>
+              <svg class="icon icon--tools icon--3x text-disabled"><use xlink:href="#icon--tools"></use></svg>
             </div>
             <div class="media__body">
               <h3 class="text-primary mb-">Development</h3>
               <p>
-                I build websites. I mostly do frontend development (HTML5, CSS3, Javascript)
-                but many times I get my hands dirty with some backend (PHP, MySQL).
+                I build websites. I mostly do frontend development focusing on HTML, CSS, and Javascript.
               </p>
             </div>
           </div>
@@ -36,7 +35,7 @@
         <div class="layout__unit small-1 medium-1 medium-mt large-1-3 large-mt0">
           <div class="media">
             <div class="media__img">
-              <i class="icon icon--ruler text-3x text-disabled"></i>
+              <svg class="icon icon--ruler icon--3x text-disabled"><use xlink:href="#icon--ruler"></use></svg>
             </div>
             <div class="media__body">
               <h3 class="text-primary mb-">Design</h3>

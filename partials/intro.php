@@ -11,6 +11,6 @@
     </h1>
   </div>
   <a href="#profile" class="learn-more bounceInDown" data-scroll>
-    <i class="icon icon--arrow-down text-2x"></i>
+    <svg class="icon icon--arrow-down icon--2x"><use xlink:href="#icon--arrow-down"></use></svg>
   </a>
 </div>

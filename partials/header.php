@@ -40,7 +40,7 @@
 
   Nice to meet you!
 
-  <3's
+  ♥'s
 
   Milzam
 -->
