@@ -24,7 +24,7 @@
       <ul class="list-inline mt">
         <li class="list-inline__item mr-"><a href="https://www.facebook.com/ahmadmilzam" title="Me on Facebook"><svg class="icon icon--facebook"><use xlink:href="#icon--facebook"></use></svg></a></li>
         <li class="list-inline__item mr-"><a href="https://twitter.com/milzaaam" title="Me on Twitter"><svg class="icon icon--twitter"><use xlink:href="#icon--twitter"></use></svg></a></li>
-        <li class="list-inline__item mr-"><a href="https://plus.google.com/+AhmadMilzam-freelance-web-developer/posts" title="Me on Google Plus"><svg class="icon icon--google-plus"><use xlink:href="#icon--google-plus"></use></svg></i></a></li>
+        <li class="list-inline__item mr-"><a href="https://plus.google.com/+AhmadMilzam-freelance-web-developer/posts" title="Me on Google Plus"><svg class="icon icon--google-plus"><use xlink:href="#icon--google-plus"></use></svg></a></li>
         <li class="list-inline__item"><a href="https://www.linkedin.com/in/ahmadmilzam" title="Me on Linkedin"><svg class="icon icon--linkedin"><use xlink:href="#icon--linkedin"></use></svg></a></li>
       </ul>
     </div>
