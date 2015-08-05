@@ -1,6 +1,9 @@
 /* SVG ICONS */
 .icon {
   display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -.1em;
   width: 1rem;
   height: 1rem;
   fill: currentColor;

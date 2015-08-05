@@ -5,7 +5,13 @@
 .divider{
   border-bottom: 1px solid $color-gray;
 }
+.small-block{
+  display: block;
+}
 @media #{$medium-up}{
+  .small-block{
+    display: inline;
+  }
   .flip-col{
     float: right !important;
   }
