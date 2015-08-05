@@ -2,9 +2,15 @@
 %bg-primary{
   background-color: $color-primary;
 }
+
+.bg-dark,
+%bg-dark{
+  background-color: $color-dark;
+}
+
 .bg-gray,
 %bg-gray{
-  background-color: #f2f2f2;
+  background-color: $color-gray;
 }
 
 .text-disabled{

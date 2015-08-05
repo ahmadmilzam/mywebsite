@@ -1,9 +1,9 @@
-<div class="pv+ bg-gray" id="contact">
+<div class="pv+" id="contact">
 
-  <div class="layout mb+">
+  <div class="layout text-center mb+">
     <div class="layout__unit small-1">
-      <h2 class="h1 text-center mb-">Contact Me</h2>
-      <p class="lede text-center">
+      <h2 class="text-bold mb-">Contact Me</h2>
+      <p class="lede">
         I'm always interested in working with new clients or hearing about exciting opportunities.<br>
         Just send me an email and I'll get back to your enquiry ASAP <svg class="icon icon--cool"><use xlink:href="#icon--cool"></use></svg>.
       </p>

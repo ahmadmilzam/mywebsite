@@ -1,8 +1,8 @@
-<div class="pv+">
-  <div class="layout">
-    <div class="layout__unit small-1 mb+">
-      <h2 class="h1 text-center mb-">Testimonials</h2>
-      <p class="lede text-center">
+<div class="bg-gray pv+">
+  <div class="layout text-center mb+">
+    <div class="layout__unit small-1">
+      <h2 class="text-bold mb-">Testimonials</h2>
+      <p class="lede">
         I've been lucky enough to work with some really great people over the years,<br>and some of them have said some really nice things about me:
       </p>
     </div>

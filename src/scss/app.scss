@@ -6,7 +6,7 @@
   url('../fonts/proximanova-bold-webfont.woff') format('woff'),
   url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
   url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -17,7 +17,7 @@
   url('../fonts/proximanova-regular-webfont.woff') format('woff'),
   url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
   url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -28,7 +28,7 @@
   url('../fonts/proximanova-regularitalic-webfont.woff') format('woff'),
   url('../fonts/proximanova-regularitalic-webfont.ttf') format('truetype'),
   url('../fonts/proximanova-regularitalic-webfont.svg#proxima_novaregular_italic') format('svg');
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -62,6 +62,7 @@
 // Site-wide mixins and functions.
 
 @import "0-tools/tools.all";
+@import "tools.z-index";
 
 
 
@@ -288,7 +289,7 @@ $anchor-font-color: $color-primary;
 
 /* [1] */
 $columns-gutter:                        $base-spacing-unit;
-$container-width:                       rem-calc(1200);
+$container-width:                       rem-calc(1100);
 $default-float:                         left;
 $opposite-float:                        right;
 
@@ -551,7 +552,7 @@ $media-gutter--small:                halve($media-gutter);
 @import "components.forms";
 @import "components.icons";
 @import "components.layouts";
-@import "components.works";
+// @import "components.works";
 
 
 /*
@@ -652,7 +653,7 @@ $enable-responsive-margins--none:             true;
 
 
 /* [5] */
-// @import "6-helpers/helpers.float";
+@import "6-helpers/helpers.float";
 
 
 /* [6] */
@@ -663,5 +664,5 @@ $enable-responsive-margins--none:             true;
 @import "6-helpers/helpers.print";
 
 @import "helpers.fontsizes";
-@import "helpers.positioning";
 @import "helpers.bgcolor";
+@import "helpers.shame";

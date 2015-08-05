@@ -16,33 +16,47 @@ html, body {
    ========================================================================== */
 .layout-header{
   display: table;
-  @extend %pos-rel;
   height: 100%;
   width: 100%;
-  background-color: $color-primary;
   color: $color-white;
-
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg.jpg);
   @media #{$large-up}{
-    background-attachment: fixed;
-  }
-  .headline{
-    line-height: 1.2;
-    @media #{$large-up}{
-      font-size: rem-calc(modular-scale(2, $base-font-size, $golden));
-    }
+    background-position: center top;
   }
 
-  // a{
-  //   color: $color-white;
-  // }
+  @extend %pos-rel;
+
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: -webkit-linear-gradient(45deg, rgba(0, 37, 76, 0.7), rgba(0, 153, 255, 0.4));
+    background-image: -moz-linear-gradient(45deg, rgba(0, 37, 76, 0.7), rgba(0, 153, 255, 0.4));
+    background-image: -o-linear-gradient(45deg, rgba(0, 37, 76, 0.7), rgba(0, 153, 255, 0.4));
+    background-image: linear-gradient(45deg, rgba(0, 37, 76, 0.7), rgba(0, 153, 255, 0.4));
+  }
 }
-  .layout__intro{
+  .layout-header__headline{
+    line-height: 1;
+  }
+
+  .layout-header__intro{
+    position: relative;
     display: table-cell;
     table-layout: fixed;
     vertical-align: middle;
+    z-index: z("default");
   }
 
-  .learn-more {
+  .layout-header__learn-more {
     display: block;
     width: 100%;
     position: absolute;
@@ -65,7 +79,7 @@ html, body {
   font-size: rem-calc(14);
   padding: $base-spacing-unit;
   color: $color-white;
-  @extend %bg-primary;
+  @extend %bg-dark;
 }
 
 

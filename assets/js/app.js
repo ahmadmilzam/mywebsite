@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-04-21
+ * 2015-08-06
  */
 (function (root, factory) {
   if ( typeof define === 'function' && define.amd ) {

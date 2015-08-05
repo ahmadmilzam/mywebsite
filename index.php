@@ -4,7 +4,7 @@
   switch ($root) {
     //change your project path here
     // laptop
-    case 'D:\server\htdocs\project\website\mywebsite':
+    case 'D:\xampp\htdocs\website\mywebsite':
       $enviroment = 'development';
     break;
     default:
@@ -21,7 +21,7 @@
 <!-- /Intro section -->
 
 <!-- Call to Action section -->
-<?php require_once 'partials/cta.php'; ?>
+<?php //require_once 'partials/cta.php'; ?>
 <!-- /Call Action section -->
 
 <!-- Profile Section -->
@@ -33,7 +33,7 @@
 <!-- /Service Section -->
 
 <!-- Recent work section -->
-<?php require_once 'partials/work.php'; ?>
+<?php require_once 'partials/project.php'; ?>
 <!-- Recent work section -->
 
 <!-- Testimonial section -->

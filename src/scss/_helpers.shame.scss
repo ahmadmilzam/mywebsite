@@ -1,0 +1,12 @@
+.pos-rel,
+%pos-rel{
+  position: relative;
+}
+.divider{
+  border-bottom: 1px solid $color-gray;
+}
+@media #{$medium-up}{
+  .flip-col{
+    float: right !important;
+  }
+}
