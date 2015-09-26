@@ -28,7 +28,9 @@
 
     <div class="layout__unit small-1 medium-1-2 large-1-2">
       <p class="text-justify">
-        I specialise in writing, <strong>architecting</strong> and
+        Hello there, I'm Milzam; I am a front-end web architect
+        and web developer from Jakarta, Indonesia.
+        Specialise in writing, <strong>architecting</strong> and
         <strong>scaling CSS</strong> for big websites in big teams.
         With a strong focus on <strong>performance</strong>,
         <strong>agile</strong>, and <strong>robust development</strong>.

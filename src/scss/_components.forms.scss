@@ -15,14 +15,16 @@ $imported-default-settings: false !default;
 $form-spacing-unit:                     rem-calc(14);
 $form-font-size:                        rem-calc($base-font-size) !default;
 $form-label-font-size:                  rem-calc(14) !default;
+
 $form-border-style:                     solid !default;
-$form-border-width:                     rem-calc(1px) !default;
+$form-border-width:                     rem-calc(1) !default;
 $form-border-color:                     #dddddd !default;
 $form-border-color-hover:               #bbbbbb !default;
+
 $form-input-padding:                    halve($form-spacing-unit) !default;
+$form-input-bg:                         #eeeeee !default;
 $form-input-margin-bottom:              halve($form-spacing-unit) !default;
 $form-label-margin-bottom:              quarter($form-spacing-unit) !default;
-
 
 fieldset {
   padding: $base-spacing-unit;
@@ -66,6 +68,7 @@ select {
   width: 100%;
   margin-bottom: halve($form-spacing-unit);
   padding: $form-spacing-unit;
+  background-color: $form-input-bg;
   // height: ($form-font-size + ($form-spacing-unit * 1.5) - rem-calc(1));
 
   border-width: $form-border-width;
