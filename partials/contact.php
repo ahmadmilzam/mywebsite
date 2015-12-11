@@ -1,7 +1,7 @@
 <div class="pv+" id="contact">
 
-  <div class="layout text-center mb+">
-    <div class="layout__unit small-1">
+  <div class="grid text-center mb+">
+    <div class="grid__item small-1">
       <h2 class="text-bold mb-">Contact Me</h2>
       <p class="lede">
         I'm always interested in working with new clients or hearing about exciting opportunities.<br>
@@ -10,9 +10,9 @@
     </div>
   </div>
 
-  <div class="layout">
+  <div class="grid">
 
-    <div class="layout__unit small-1 medium-1-3 small-mb">
+    <div class="grid__item small-1 medium-1of3 small-mb">
       <h4>Contact Detail</h4>
       <p>
         P: +62 812 840 262 91
@@ -29,54 +29,54 @@
       </ul>
     </div>
 
-    <form class="layout__unit small-1 medium-2-3" action="send_email.php" name="contactForm" id="contactForm" method="post" data-abide="ajax" autocomplete="off">
+    <form class="grid__item small-1 medium-2of3" action="send_email.php" name="contactForm" id="js-contactForm" method="post" data-abide="ajax" autocomplete="off">
 
-      <div class="layout mb-">
-        <div class="layout__unit small-1 medium-1-2">
+      <div class="grid mb-">
+        <div class="grid__item small-1 medium-1of2">
           <label for="name">
             <small>Name</small>
           </label>
           <input class="radius" id="name" type="text" name="name" placeholder="My name is*" required>
         </div>
-        <div class="layout__unit small-1 medium-1-2">
+        <div class="grid__item small-1 medium-1of2">
           <label for="email">
             <small>Email</small>
           </label>
           <input class="radius" id="email" type="email" name="email" placeholder="your.email@something.com*" required>
         </div>
       </div>
-      <div class="layout mb-">
-        <div class="layout__unit small-1 medium-1-2">
+      <div class="grid mb-">
+        <div class="grid__item small-1 medium-1of2">
           <label for="phonenumber">
             <small>Phone number</small>
           </label>
           <input class="radius" id="phonenumber" type="tel" name="phone" placeholder="0899999999*" required pattern="[0-9]+">
         </div>
-        <div class="layout__unit small-1 medium-1-2">
+        <div class="grid__item small-1 medium-1of2">
           <label for="website-url">
             <small>Website Url</small>
           </label>
           <input class="radius" id="website-url" type="url" name="website" placeholder="http://your-current-website.com">
         </div>
       </div>
-      <div class="layout mb-">
-        <div class="layout__unit small-1">
+      <div class="grid mb-">
+        <div class="grid__item small-1">
           <label for="message">
             <small>Project detail</small>
           </label>
           <textarea class="radius" id="message" name="message" rows="6" placeholder="Hello, I have some project TBD*" required></textarea>
         </div>
       </div>
-      <div class="layout mb">
-        <div class="layout__unit small-1">
+      <div class="grid mb">
+        <div class="grid__item small-1">
           <input class="radius first-name" id="firstname" type="email" name="first_name" placeholder="Your first name">
           <button class="btn btn--large btn--full" id="buttonSubmit" type="submit" data-loading="Please wait..">SEND</button>
         </div>
       </div>
 
-      <div class="layout">
-        <div class="layout__unit small-1">
-          <div class="feedback mt-" id="feedback"></div>
+      <div class="grid">
+        <div class="grid__item small-1">
+          <div class="feedback mt-" id="js-feedback"></div>
         </div>
       </div>
     </form>

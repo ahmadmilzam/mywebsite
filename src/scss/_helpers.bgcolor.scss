@@ -1,21 +1,36 @@
 .bg-primary,
 %bg-primary{
-  background-color: $color-primary;
+  background-color: color('primary');
+}
+
+.bg-secondary,
+%bg-secondary{
+  background-color: color('secondary');
 }
 
 .bg-dark,
 %bg-dark{
-  background-color: $color-dark;
+  background-color: color('background', 'dark');
 }
 
 .bg-gray,
 %bg-gray{
-  background-color: $color-gray;
+  background-color: color('background');
+}
+
+.bg-even,
+%bg-even{
+  background-color: color('background', 'light');
+}
+
+.text-primary{
+  color: color('primary');
+}
+
+.text-accent{
+  color: color('accent');
 }
 
 .text-disabled{
-  color: #999999;
-}
-.text-primary{
-  color: $color-primary;
+  color: $color-disabled;
 }

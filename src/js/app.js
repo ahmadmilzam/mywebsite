@@ -27,8 +27,25 @@ var App = (function(){
     }
   }
 
-  var formContact = document.getElementById('contactForm'),
-      formFeedback = document.getElementById('feedback');
+  var sendGAEvent = function(){
+
+    var type = this.getAttribute('data-type');
+
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'CTAMeeting-'+type,
+      eventAction: 'click',
+      eventLabel: 'Arrange a meeting'
+    });
+  }
+  var btnMeetings = document.getElementsByClassName('js-meeting');
+
+  for (var i = 0; i < btnMeetings.length; i++) {
+    btnMeetings[i].addEventListener('click', sendGAEvent);
+  };
+
+  var formContact = document.getElementById('js-contactForm'),
+      formFeedback = document.getElementById('js-feedback');
 
   var formHandler = function(){
     formContact.addEventListener('submit', function(e){

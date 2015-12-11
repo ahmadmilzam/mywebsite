@@ -1,14 +1,14 @@
-<div class="bg-gray pv+">
-  <div class="layout text-center mb+">
-    <div class="layout__unit small-1">
+<div class="bg-even pv+">
+  <div class="grid text-center mb+">
+    <div class="grid__item small-1">
       <h2 class="text-bold mb-">Testimonials</h2>
       <p class="lede">
         I've been lucky enough to work with some really great people over the years,<br>and some of them have said some really nice things about me:
       </p>
     </div>
   </div>
-  <div class="layout">
-    <div class="layout__unit small-1 medium-3-5 testimonial-container pos-rel small-mb medium-mb0">
+  <div class="grid">
+    <div class="grid__item small-1 medium-3of5 testimonial-container small-mb medium-mb0">
 
       <blockquote class="blockquote">
         <h3 class="blockquote__header">
@@ -96,8 +96,8 @@
       </blockquote>
 
     </div>
-    <div class="layout__unit small-1 medium-2-5">
-      <a href="#contact" class="btn btn--large btn--full" data-scroll>
+    <div class="grid__item small-1 medium-2of5">
+      <a href="#contact" class="btn btn--large btn--full js-meeting" data-type="testimonial" data-scroll="">
         Hire me
       </a>
     </div>

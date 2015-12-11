@@ -1,14 +1,14 @@
-<div class="pv+ bg-gray">
-  <div class="layout text-center mb+">
-    <div class="layout__unit small-1">
+<div class="bg-even pv+">
+  <div class="grid text-center mb+">
+    <div class="grid__item small-1">
       <h2 class="text-bold">What I Do</h2>
     </div>
   </div>
-  <div class="layout text-center">
-    <div class="layout__unit small-1 small-mb medium-1-2 medium-mb0 large-1-3">
+  <div class="grid text-center">
+    <div class="grid__item small-1 small-mb medium-1of2 medium-mb0 large-1of3">
       <div class="block">
         <div class="block__img">
-          <svg class="icon icon--direction icon--35x text-primary"><use xlink:href="#icon--direction"></use></svg>
+          <svg class="icon icon--direction icon--35x text-accent"><use xlink:href="#icon--direction"></use></svg>
         </div>
         <div class="block__body">
           <h3 class="text-bold text-disabled mb-">Consultancy</h3>
@@ -21,10 +21,10 @@
         </div>
       </div>
     </div>
-    <div class="layout__unit small-1 small-mb medium-1-2 medium-mb0 large-1-3">
+    <div class="grid__item small-1 small-mb medium-1of2 medium-mb0 large-1of3">
       <div class="block">
         <div class="block__img">
-          <svg class="icon icon--tools icon--35x text-primary"><use xlink:href="#icon--tools"></use></svg>
+          <svg class="icon icon--tools icon--35x text-accent"><use xlink:href="#icon--tools"></use></svg>
         </div>
         <div class="block__body">
           <h3 class="text-bold text-disabled mb-">Development</h3>
@@ -34,10 +34,10 @@
         </div>
       </div>
     </div>
-    <div class="layout__unit small-1 medium-1 medium-mt large-1-3 large-mt0">
+    <div class="grid__item small-1 medium-1 medium-mt large-1of3 large-mt0">
       <div class="block">
         <div class="block__img">
-          <svg class="icon icon--ruler icon--35x text-primary"><use xlink:href="#icon--ruler"></use></svg>
+          <svg class="icon icon--ruler icon--35x text-accent"><use xlink:href="#icon--ruler"></use></svg>
         </div>
         <div class="block__body">
           <h3 class="text-bold text-disabled mb-">Design</h3>

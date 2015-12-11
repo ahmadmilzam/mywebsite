@@ -1,12 +1,12 @@
 <div class="pv+">
-  <div class="layout text-center mb+">
-    <div class="layout__unit small-1">
+  <div class="grid text-center mb+">
+    <div class="grid__item small-1">
       <h2 class="text-bold mb-">Who Am I</h2>
       <p class="lede ">A litle story about me.</p>
     </div>
   </div>
-  <div class="layout">
-    <div class="layout__unit small-1 medium-1-2 large-1-2 large-mb0 text-center">
+  <div class="grid">
+    <div class="grid__item small-1 medium-1of2 large-1of2 large-mb0 text-center">
       <img src="assets/img/blank.png"
            data-src-base="assets/img/layout/"
            data-src="<480:small/milzam.png,
@@ -26,7 +26,7 @@
       </blockquote>
     </div>
 
-    <div class="layout__unit small-1 medium-1-2 large-1-2">
+    <div class="grid__item small-1 medium-1of2 large-1of2">
       <p class="text-justify">
         Hello there, I'm Milzam; I am a front-end web architect
         and web developer from Jakarta, Indonesia.

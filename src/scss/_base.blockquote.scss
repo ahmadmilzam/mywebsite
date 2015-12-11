@@ -1,5 +1,11 @@
+$blockquote-border-width: rem-calc( quarter($base-spacing-unit) );
+$blockquote-border-style: solid;
+$blockquote-border-color: color('accent');
+$blockquote-header-color: #777777;
+$blockquote-body-color: #999999;
+
 .blockquote{
-  border-left: rem-calc( quarter($base-spacing-unit) ) solid scale-color($base-background-color, $lightness: -10%);
+  border-left: $blockquote-border-width $blockquote-border-style $blockquote-border-color;
   padding-left: rem-calc( $base-spacing-unit );
   padding-top: rem-calc( quarter($base-spacing-unit) );
   padding-bottom: rem-calc( quarter($base-spacing-unit) );
@@ -7,14 +13,14 @@
 
 .blockquote__header{
   @extend %h4;
-  color: #777;
+  color: $blockquote-header-color;
   margin-bottom: rem-calc( halve($base-spacing-unit) );
 }
 .blockquote__body{
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #999;
+  color: $blockquote-body-color;
 }
 .blockquote__footer{
   font-size: 85%;
-  color: #777;
+  color: $blockquote-header-color;
 }

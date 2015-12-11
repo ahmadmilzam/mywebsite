@@ -18,11 +18,11 @@ $form-label-font-size:                  rem-calc(14) !default;
 
 $form-border-style:                     solid !default;
 $form-border-width:                     rem-calc(1) !default;
-$form-border-color:                     #dddddd !default;
-$form-border-color-hover:               #bbbbbb !default;
+$form-border-color:                     color('accent') !default;
+$form-border-color-hover:               color('accent', 'dark') !default;
 
 $form-input-padding:                    halve($form-spacing-unit) !default;
-$form-input-bg:                         #eeeeee !default;
+$form-input-bg:                         #FFFFFF !default;
 $form-input-margin-bottom:              halve($form-spacing-unit) !default;
 $form-label-margin-bottom:              quarter($form-spacing-unit) !default;
 
@@ -42,7 +42,7 @@ label {
   margin-bottom: rem-calc($form-label-margin-bottom);
   &.required:after {
     content: "*";
-    color: $color-alert;
+    color: color('alert');
   }
 
   abbr{
@@ -115,9 +115,9 @@ input[type="radio"] {
 }
 
 .feedback {
-  color: $color-success;
+  color: color('success');
   font-weight: bold;
   &.error{
-    color: $color-alert;
+    color: color('alert');
   }
 }

@@ -5,7 +5,7 @@
  * @author Ahmad Milzam <email@ahmadmilzam.com>
  * @version 0.0.1
  * Copyright . MIT licensed.
- * 2015-08-06
+ * 2015-12-09
  */
 (function (root, factory) {
   if ( typeof define === 'function' && define.amd ) {
@@ -603,8 +603,25 @@ var App = (function(){
     }
   }
 
-  var formContact = document.getElementById('contactForm'),
-      formFeedback = document.getElementById('feedback');
+  var sendGAEvent = function(){
+
+    var type = this.getAttribute('data-type');
+
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'CTAMeeting-'+type,
+      eventAction: 'click',
+      eventLabel: 'Arrange a meeting'
+    });
+  }
+  var btnMeetings = document.getElementsByClassName('js-meeting');
+
+  for (var i = 0; i < btnMeetings.length; i++) {
+    btnMeetings[i].addEventListener('click', sendGAEvent);
+  };
+
+  var formContact = document.getElementById('js-contactForm'),
+      formFeedback = document.getElementById('js-feedback');
 
   var formHandler = function(){
     formContact.addEventListener('submit', function(e){

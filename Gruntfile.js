@@ -3,8 +3,7 @@ module.exports = function(grunt) {
   /**
    * Dynamically load npm tasks
    */
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
+  require('load-grunt-tasks')(grunt);
   /**
    * CSSKit Grunt config
    */
@@ -19,13 +18,9 @@ module.exports = function(grunt) {
      * Set project info
      */
     project: {
+      bower: 'libs',
       src: 'src',
-      assets: 'assets',
-      css: {
-        main: [
-          '<%= project.src %>/scss/app.scss'
-        ]
-      }
+      assets: 'assets'
     },
 
     /**
@@ -51,14 +46,14 @@ module.exports = function(grunt) {
      * Compiles all Sass/SCSS files and appends project banner
      */
     sass: {
-      compile:{
-        options: {
-          loadPath: 'libs/csskit/<%= project.src%>/scss/',
-          banner: '<%= tag.banner %>',
-          style: 'expanded'
-        },
+      options: {
+        includePaths: ['<%= project.bower %>/csskit/src/scss'],
+        outputStyle: 'nested',
+        sourceMap: true
+      },
+      compile: {
         files: {
-          '<%= project.assets %>/css/app.css' : '<%= project.css.main %>'
+          '<%= project.assets %>/css/app.css' : '<%= project.src %>/scss/app.scss'
         }
       }
     },
@@ -80,7 +75,7 @@ module.exports = function(grunt) {
           map: false
         },
         files: {
-          '<%= project.assets %>/css/app.prefixed.css' : ['<%= project.assets %>/css/app.css']
+          '<%= project.assets %>/css/app.css' : ['<%= project.assets %>/css/app.css']
         }
       }
     },
@@ -92,30 +87,11 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          '<%= project.assets %>/css/app.min.css' : ['<%= project.assets %>/css/app.prefixed.css']
+          '<%= project.assets %>/css/app.min.css' : ['<%= project.assets %>/css/app.css']
         },
       },
     },
 
-    /**
-     * Optimize Images.
-     * https://github.com/gruntjs/grunt-contrib-imagemin
-     */
-    imagemin: {                          // Task
-      dynamic: {
-        options: {                       // Target options
-          optimizationLevel: 3,
-          progressive: false,
-          cache: false
-        },
-        files: [{
-          expand: true,                       // Enable dynamic expansion
-          cwd: '<%= project.assets %>/img/',  // Src matches are relative to this path
-          src: ['**/*.{png,jpg,gif}'],        // Actual patterns to match
-          dest: '<%= project.assets %>/img/'  // Destination path prefix
-        }]
-      }
-    },
 
     /**
      * Concatenate files.
@@ -184,7 +160,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          '<%= project.src %>/ja/**/*.js'
+          '<%= project.src %>/js/*.js'
         ],
         task: ['concat:target']
       }
@@ -213,8 +189,7 @@ module.exports = function(grunt) {
     'base',
     'autoprefixer:dist',
     'cssmin:combine',
-    'uglify:target',
-    'imagemin:dynamic'
+    'uglify:target'
   ]);
 
 }

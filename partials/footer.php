@@ -1,9 +1,9 @@
   <footer class="layout-footer">
-    <div class="layout">
-      <div class="layout__unit small-1 medium-1-2 small-text-center medium-text-center large-text-left columns">
+    <div class="grid">
+      <div class="grid__item small-1 medium-1of2 small-text-center medium-text-center large-text-left columns">
         Copyright &copy; ahmadmilzam.com <?php echo date('Y'); ?>
       </div>
-      <div class="layout__unit small-1 medium-1-2 columns small-text-center medium-text-center large-text-right">
+      <div class="grid__item small-1 medium-1of2 columns small-text-center medium-text-center large-text-right">
         Made with <svg class="icon icon--heart"><use xlink:href="#icon--heart"></use></svg> from my <svg class="icon icon--home"><use xlink:href="#icon--home"></use></svg><span class="svg-fallback">Home</span> in Jakarta, Indonesia
       </div>
     </div>

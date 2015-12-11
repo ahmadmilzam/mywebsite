@@ -1,18 +1,18 @@
 <div class="pv+" id="work">
 
-  <div class="layout text-center">
-    <div class="layout__unit small-1">
+  <div class="grid text-center">
+    <div class="grid__item small-1">
       <h2 class="text-bold mb-">Some Of My Work</h2>
       <p class="lede">Want to see more examples? <a href="mailto:email@ahmadmilzam.com">Email me</a>.</p>
     </div>
   </div>
 
   <!-- asoris -->
-  <div class="layout divider pv+">
-    <div class="layout__unit small-1 medium-1-2 small-mb medium-mb0 flip-col">
+  <div class="grid divider pv+">
+    <div class="grid__item small-1 medium-1of2 small-mb medium-mb0 flip-col">
       <img src="assets/img/project/medium/asoris.jpg" alt="Asoris">
     </div>
-    <div class="layout__unit small-1 medium-1-2">
+    <div class="grid__item small-1 medium-1of2">
       <h3 class="text-bold mb--">Asoris - Online Marketplace</h3>
       <p>
         I was asked to create a HTML template from PSD for an online marketplace.
@@ -41,11 +41,11 @@
   </div>
 
   <!-- muse -->
-  <div class="layout divider pv+">
-    <div class="layout__unit small-1 medium-1-2 small-mb medium-mb0">
+  <div class="grid divider pv+">
+    <div class="grid__item small-1 medium-1of2 small-mb medium-mb0">
       <img src="assets/img/project/medium/muse.jpg" alt="Muse Landing Page">
     </div>
-    <div class="layout__unit small-1 medium-1-2">
+    <div class="grid__item small-1 medium-1of2">
       <h3 class="text-bold mb--">Muse - Landing Page</h3>
       <p>
         I was asked to create an interactive and informative website for Muse,  mobile fashion shopping apps dedicated in serving at Indonesia.
@@ -74,11 +74,11 @@
   </div>
 
   <!-- qualixen -->
-  <div class="layout divider pv+">
-    <div class="layout__unit small-1 medium-1-2 small-mb medium-mb0 flip-col">
+  <div class="grid divider pv+">
+    <div class="grid__item small-1 medium-1of2 small-mb medium-mb0 flip-col">
       <img src="assets/img/project/medium/qualixen.jpg" alt="Qualixen company profile website">
     </div>
-    <div class="layout__unit small-1 medium-1-2">
+    <div class="grid__item small-1 medium-1of2">
       <h3 class="text-bold mb--">Qualixen - Company Profile</h3>
       <p>
         I was asked to create an informative website and with a clean flat design and responsive for Qualixen, Structural Engineering Specialists for Oil &amp; Gas Industry.
@@ -109,11 +109,11 @@
   </div>
 
   <!-- anona -->
-  <div class="layout pv+">
-    <div class="layout__unit small-1 medium-1-2 small-mb medium-mb0">
+  <div class="grid pv+">
+    <div class="grid__item small-1 medium-1of2 small-mb medium-mb0">
       <img src="assets/img/project/medium/anona.jpg" alt="Anona online store template">
     </div>
-    <div class="layout__unit small-1 medium-1-2">
+    <div class="grid__item small-1 medium-1of2">
       <h3 class="text-bold mb--">Anona - Online Store Theme</h3>
       <p>
         A Minimal Responsive Template built using HTML5/CSS3 and jQuery. Works great across all devices.

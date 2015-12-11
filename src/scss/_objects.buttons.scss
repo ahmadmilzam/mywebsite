@@ -2,145 +2,34 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-// set light color for dark background-color
-$light-text-color: $btn-color;
-
-// and dark color for light background-color
-$dark-text-color: $base-text-color;
 
 // button color type modifier
 .btn--muse{
 
-  background-color: lighten($color-alert, 5%);
-
-  @if($btn-border-width != 0) {
-    border-color: $color-alert;
-  }
-
-  @include transition(background-color);
-
-  &:hover,
-  &:focus{
-    background-color: lighten($color-alert, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: lighten($color-alert, $btn-lightness-factor);
-    }
-  }
-  &:active{
-    background-color: darken($color-alert, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: darken($color-alert, $btn-lightness-factor);
-    }
-  }
+  @include buttons-style($color-muse);
 
 }
 
 .btn--cominter{
 
-  background-color: lighten($color-success, 5%);
-
-  @if($btn-border-width != 0) {
-    border-color: $color-success;
-  }
-
-  @include transition(background-color);
-
-  &:hover,
-  &:focus{
-    background-color: lighten($color-success, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: lighten($color-success, $btn-lightness-factor);
-    }
-  }
-  &:active{
-    background-color: darken($color-success, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: darken($color-success, $btn-lightness-factor);
-    }
-  }
+  @include buttons-style($color-cominter);
 
 }
 
 .btn--anona{
 
-  background-color: lighten($color-secondary, 5%);
-
-  @if($btn-border-width != 0) {
-    border-color: $color-secondary;
-  }
-
-  @include transition(background-color);
-
-  &:hover,
-  &:focus{
-    background-color: lighten($color-secondary, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: lighten($color-secondary, $btn-lightness-factor);
-    }
-  }
-  &:active{
-    background-color: darken($color-secondary, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: darken($color-secondary, $btn-lightness-factor);
-    }
-  }
+  @include buttons-style($color-anona);
 
 }
 
 .btn--qualixen{
 
-  background-color: lighten($color-qualixen, 5%);
-
-  @if($btn-border-width != 0) {
-    border-color: $color-qualixen;
-  }
-
-  @include transition(background-color);
-
-  &:hover,
-  &:focus{
-    background-color: lighten($color-qualixen, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: lighten($color-qualixen, $btn-lightness-factor);
-    }
-  }
-  &:active{
-    background-color: darken($color-qualixen, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: darken($color-qualixen, $btn-lightness-factor);
-    }
-  }
+  @include buttons-style($color-qualixen);
 
 }
 
 .btn--asoris{
 
-  background-color: lighten($color-asoris, 5%);
+  @include buttons-style($color-asoris);
 
-  @if($btn-border-width != 0) {
-    border-color: $color-asoris;
-  }
-
-  @include transition(background-color);
-
-  &:hover,
-  &:focus{
-    background-color: lighten($color-asoris, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: lighten($color-asoris, $btn-lightness-factor);
-    }
-  }
-  &:active{
-    background-color: darken($color-asoris, $btn-lightness-factor);
-    @if($btn-border-width != 0) {
-      border-color: darken($color-asoris, $btn-lightness-factor);
-    }
-  }
-
-}
-
-
-// font size modifer to increase font-size for .btn--large
-.btn--large{
-  font-size: rem-calc($base-font-size * $lede-size);
 }
